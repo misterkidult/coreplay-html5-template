@@ -50,7 +50,7 @@ Responsive Web Design 的部份，我們基本上不分拆手機平版的 CSS，
 
 ## Javascript (Base on jQuery )
 
-其他主要使用的 js：
+主要使用的 js：
 * jQuery
 * PACE 計算 Loading
 * Swiper 水平，且較複雜的頁面單元切換，如 Event Site
