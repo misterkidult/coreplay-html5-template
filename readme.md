@@ -53,11 +53,11 @@ Responsive Web Design 的部份，我們基本上不分拆手機平版的 CSS，
 其他主要使用的 js：
 * jQuery
 * PACE 計算 Loading
-# Swiper 水平，且較複雜的頁面單元切換，如 Event Site
-# fullpage 直式，相對單純的頁面單元切換，如 Landing Page
-# bootstrap4 處理傳統網頁內容
-# BrowserDetect
-# mobile-detect
+* Swiper 水平，且較複雜的頁面單元切換，如 Event Site
+* fullpage 直式，相對單純的頁面單元切換，如 Landing Page
+* bootstrap4 處理傳統網頁內容
+* BrowserDetect
+* mobile-detect
 
 視專案需求加入
 * ga tracking
