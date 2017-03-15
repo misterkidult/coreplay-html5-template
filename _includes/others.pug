@@ -1,0 +1,29 @@
+mixin cardDetail(retail,address,phone,map)
+	.col
+		.card
+			.card-header
+				.card-title
+					=retail
+				button.button--xl.btn--map(href=map target="_blank")
+					span 地圖
+			.card-content
+				i.i--location
+				.card-text
+					=address
+			.card-content
+				i.i--phone
+				.card-text
+					=phone
+.row--card
+	+cardDetail("基隆市 愛二","基隆市仁愛區仁德里18鄰愛二路 52 號","(02)2424-8761","https://www.google.com/maps/d/u/0/viewer?hl=zh-TW&authuser=0&mid=1jZlfKj-45dRAkxqjvVyTv43Cyi0&ll=25.12910570000002%2C121.74213929999996&z=16")
+	+cardDetail("桃園中正","桃園市桃園區中正路905號","(03)346-8955","https://www.google.com/maps/d/u/0/viewer?hl=zh-TW&authuser=0&mid=1jZlfKj-45dRAkxqjvVyTv43Cyi0&ll=25.011597999999978%2C121.30038300000001&z=16")
+	+cardDetail("桃園市 中壢","桃園市中壢區和平街50號","(03)426-3333","https://www.google.com/maps/d/u/0/viewer?hl=zh-TW&authuser=0&mid=1jZlfKj-45dRAkxqjvVyTv43Cyi0&ll=24.955645100000005%2C121.22643019999998&z=16")
+	+cardDetail("桃園市 桃園站前","桃園市桃園區大同路49號","(03)333-5745","https://www.google.com/maps/d/u/0/viewer?hl=zh-TW&authuser=0&mid=1jZlfKj-45dRAkxqjvVyTv43Cyi0&ll=24.98943260000003%2C121.3122932&z=16")
+	+cardDetail("台中市 漢口","台中市西屯區漢口路2段1號","(04)2314-8773","https://www.google.com/maps/d/u/0/viewer?hl=zh-TW&authuser=0&mid=1jZlfKj-45dRAkxqjvVyTv43Cyi0&ll=24.163331000000017%2C120.65765299999998&z=16")
+	+cardDetail("台中市 台中台糖","台中市西屯區台灣大道4段1086號(台糖量販店)","(04)2463-9363","https://www.google.com/maps/d/u/0/viewer?hl=zh-TW&authuser=0&mid=1jZlfKj-45dRAkxqjvVyTv43Cyi0&ll=24.183902000000003%2C120.61485199999993&z=16")
+	+cardDetail("台中市 德先","台中市東區復興路四段186號B1 (新時代購物中心)","(04)2221-6357","https://www.google.com/maps/d/u/0/viewer?hl=zh-TW&authuser=0&mid=1jZlfKj-45dRAkxqjvVyTv43Cyi0&ll=24.147735799999985%2C120.6736482&z=16")
+	+cardDetail("台中市 學士","台中市北區學士路272號","(04)2235-3229","https://www.google.com/maps/d/u/0/viewer?hl=zh-TW&authuser=0&mid=1jZlfKj-45dRAkxqjvVyTv43Cyi0&ll=24.162083400000007%2C120.68097549999993&z=16")
+	+cardDetail("台中市 向上","台中市西區向上路一段238號","(04)2305-7188","https://www.google.com/maps/d/u/0/viewer?hl=zh-TW&authuser=0&mid=1jZlfKj-45dRAkxqjvVyTv43Cyi0&ll=24.1466865%2C120.66088630000002&z=16")
+	+cardDetail("台中市 台中南屯","台中市南屯區五權西路2段720號","(04)2380-8283","https://www.google.com/maps/d/u/0/viewer?hl=zh-TW&authuser=0&mid=1jZlfKj-45dRAkxqjvVyTv43Cyi0&ll=24.142635%2C120.63793799999996&z=16")
+	+cardDetail("彰化縣 彰化","彰化縣彰化市永福里孔門路 10 號1樓","(04)725-6995","https://www.google.com/maps/d/u/0/viewer?hl=zh-TW&authuser=0&mid=1jZlfKj-45dRAkxqjvVyTv43Cyi0&ll=24.051796299999985%2C120.51613520000001&z=16")
+	+cardDetail("高雄市 草衙道","高雄市前鎮區中山四路100號1樓14櫃","(07)793-3112","https://www.google.com/maps/d/u/0/viewer?hl=zh-TW&authuser=0&mid=1jZlfKj-45dRAkxqjvVyTv43Cyi0&ll=22.58261840000002%2C120.32884749999994&z=16")

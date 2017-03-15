@@ -1,0 +1,37 @@
+
+.row--portfolio
+	&
+		+make-row(0)
+	> .col
+		+make-col(0)
+	> .col
+		+make-col-span(3)
+	> .col img
+		width: 100%
+	+tablet
+		> .col
+			+make-col-span(6)
+	+mobile
+		> .col
+			+make-col-span(12)
+
+.row--content
+	&
+		+make-row(22px)
+	> .col--logo,
+	> .col--about,
+	> .col
+		+make-col(22px)
+	> .col--logo
+		+make-col-span(1.2)
+	> .col
+		+make-col-span(6)
+	> .col--about
+		+make-col-span(8)
+	+mobile
+		> .col--logo
+			+make-col-span(0)
+		> .col
+			+make-col-span(12)
+		> .col--about
+			+make-col-span(12)

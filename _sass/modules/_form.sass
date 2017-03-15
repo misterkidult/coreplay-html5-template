@@ -1,0 +1,565 @@
+input,
+textarea
+	&::-moz-placeholder
+		color: rgba(255,255,255,.4)
+	&:-ms-input-placeholder
+		color: rgba(255,255,255,.4)
+	&:-moz-placeholder
+		color: rgba(255,255,255,.4)
+	&::-webkit-input-placeholder
+		color: rgba(255,255,255,.4)
+	.his &
+		&::-moz-placeholder
+			color: rgba(255,255,255,.4)
+		&:-ms-input-placeholder
+			color: rgba(255,255,255,.4)
+		&:-moz-placeholder
+			color: rgba(255,255,255,.4)
+		&::-webkit-input-placeholder
+			color: rgba(255,255,255,.4)
+
+input,
+textarea,
+select
+	// +box-shadow(inset 1.5px 2.6px 5.3px 0.7px rgba(137, 137, 137, 0.41))
+	appearance: none
+	-webkit-appearance: none
+	font-size: 16px
+	line-height: 1
+	width: 100%
+	background: white
+	border: none
+	&::-webkit-input-placeholder
+		color: rgba(255,255,255,.4)
+	&::-moz-placeholder
+		color: rgba(255,255,255,.4)
+	&:-ms-input-placeholder
+		color: rgba(255,255,255,.4)
+	&:-moz-placeholder
+		color: rgba(255,255,255,.4)
+
+input,
+textarea,
+select
+	&.error
+		outline: 1px solid red
+
+.radiobox input[type="radio"]
+	&
+		display: none
+		width: auto
+		border: none
+	+ span
+		&
+			+post(.5rem)
+			// +margin(0 3px)
+			+padding(5px)
+			display: inline-block
+			cursor: pointer
+			width: auto
+			background: transparent
+			font-size: 14px
+			line-height: 1
+			padding: 10px 23px
+			padding:
+				bottom: 14px
+			color: rgba(255,255,255,.4)
+			text-align: center
+
+.radiobox input[type="radio"]:checked
+	+ span
+		background: #00B1EB
+		color: white
+
+.form--radiobox
+	&
+		margin:
+			left: -3px
+
+.radiobox:first-child
+	margin:
+		left: 0
+
+input[type="radio"]:checked
+	+ span
+		color: #FFF
+		background: #000
+
+input[type="checkbox"]
+	&
+		display: none
+		width: auto
+		border: none
+
+.checkbox
+	i
+		font-size: 44px
+		// color: rgba(white, .7)
+		cursor: pointer
+	input[type="checkbox"] + i
+		display: inline
+	input[type="checkbox"]:checked + i
+		display: none
+	input[type="checkbox"] + i + i
+		display: none
+	input[type="checkbox"]:checked + i + i
+		display: inline
+
+
+input[type="checkbox"] + span
+	&
+		+inline-block
+		width: 2em
+	i.fa.fa-square-o
+		display: inline
+	i.fa.fa-check-square-o
+		display: none
+
+input[type="checkbox"]:checked + span
+	i.fa.fa-square-o
+		display: none
+	i.fa.fa-check-square-o
+		display: inline
+
+select
+	&
+		+relative
+		+appearance(none)
+		+border-radius(0)
+		// padding: 0 1em
+		// padding:
+		// 	right: 4em
+		height: 44px
+		line-height: 30px
+		color: #737373
+	& + i
+		+absolute
+		+transform(translateX(-180%))
+		font-size: 20px !important
+		top: 5px
+		color: #4c6272 + 30
+	.ie &
+		&
+			+appearance(normal)
+			padding: 0
+		& + i
+			display: none
+
+
+.select
+	+relative
+	white-space: nowrap
+
+.form--title
+	&
+		+post(1rem)
+		font-size: 20px
+	span
+		// margin-left: 33px
+		font-size: 16px
+		color: #737373
+	+mobile
+		font-size: 16px
+
+
+.form--input
+	&
+		+post(1rem)
+		background: transparent
+		border: 1px solid #DDD
+	label
+		display: block
+		
+		color: #414141
+		font-size: 16px
+		line-height: 44px
+		font-weight: 300
+		+flex-position(center,center)
+		white-space: nowrap
+		padding:
+			left: 5px
+	input
+		background: transparent
+		display: block
+
+	&.serial
+		background: transparent
+		input
+			margin-right: 10px
+
+.uploadFile
+	&
+		+make-row(0)
+		+flex-position(center,flex-start)
+		background: url('../images/sprite/ico--add.png') no-repeat right #FFF
+		background-position-x: 97%
+		border: 1px solid #DDD
+		position: relative
+	label
+		position: absolute
+		color: #737373
+		font-weight: 400
+		top: 0
+		margin-bottom: 0
+		text-overflow: ellipsis
+		width: 90%
+		overflow: hidden
+
+
+input[type=file]
+	&
+		opacity: 0
+		background: transparent
+		display: inline-block
+		cursor: pointer
+.form--radioboxGender
+	&
+		+post(.5rem)
+		+make-row(0)
+	input[type="radio"] + span
+		+padding(15px)
+		+post(0)
+	label
+		border: 1px solid #DDD
+
+.form--row
+	&
+		+make-row(0)
+	.form--input
+		flex: 50%
+	+mq-down(md)
+		&
+			flex-wrap: wrap
+		.form--input + .form--input,
+		.form--input + .form--radioboxGender
+			&
+				margin:
+					left: 0
+			.radiobox
+				margin:
+					left: -3px
+	> *
+		+make-col(0)
+	> .form--select
+		+make-col-span(4)
+
+.form--rowArea
+	&
+		+make-row(0)
+	> *
+		+make-col(0)
+	> .form--select
+		+make-col-span(6)
+	// +mq-down(md)
+	// 	> .form--select
+	// 		+make-col-span(12)
+
+.form--select
+	&
+		display: flex
+		+post(16px)
+	select
+		height: 46px
+		background: url('../images/sprite/down.png') no-repeat right transparent
+		background-position-x: 97%
+		border: 1px solid #DDD
+		color: rgba(255,255,255,.4)
+		background: rgb(3, 37, 74)
+	select + select
+		margin-left: 13px
+// .form--select + .form--select
+// 	&
+// 		margin-left: 13px
+// 	+mq-down(md)
+// 		margin-left: 0
+
+label.checkbox
+	&
+		letter-spacing: 1px
+		display: inline-block
+	input
+		width: 0
+		-webkit-appearance: none
+		-moz-appearance: none
+	input + i
+		width: 20px
+	i
+		margin-top: 1px
+		font-size: 20px
+		margin-right: 7px
+		&.fa-check-square-o
+			margin-right: 4.3px
+	span
+		display: inline-block
+		transform: translateY(-3px)
+		font-size: 14px
+		a
+			display: inline-block
+			color: #00B1EB
+			text-decoration: underline
+			font-size: 14px
+			+post(1rem)
+.form--delivery
+	&
+		margin:
+			top: 160px
+			left: 20px
+	+mobile
+		margin:
+			top: 0
+			left: 0
+
+.row--search
+	&
+		+post(13px)
+		display: flex
+		position: relative
+	label,
+	.form--group,
+	.form--search,
+	.sort
+		display: flex
+	.sort
+		justify-content: center	
+	label
+		flex-shrink: 0
+		align-self: center
+		margin-left: 13px
+	.form--group + .form--group
+		margin-left: 10px
+	select
+		color: #FFF
+		background: transparent
+		width: auto
+		padding: 0px 30px 0px 10px
+		background: url('../images/sprite/down__white.png') no-repeat right transparent
+		background-position-x: 90%
+		background-size: 13px 13px
+	.border-left:before
+		position: absolute
+		margin-top: 14px
+		margin-left: -7px
+		content: ""
+		height: 17px
+		border-right: 2px solid #FFF
+	+mobile
+		&
+			display: block
+			font-size: 14px
+			justify-content: center
+		label
+			margin: 0
+		select
+			font-size: 14px
+.form--search
+	&
+		display: flex
+		position: absolute
+		right: 13px
+	+tablet
+		position: static
+		width: 280px
+	+mobile
+		position: static
+		+post(13px)
+		width: 300px
+		max-width: 100%
+		margin: auto
+
+.form__inner
+	&
+		width: 100%
+		background: white
+	input
+		&
+			width: 300px
+			height: 44px
+		+mobile
+			width: 100%
+.form__after
+	&
+		flex: 1
+		align-self: center
+		justify-content: center
+		text-align: center
+		+mobile
+			text-align: right
+	input
+		width: 50px
+		background: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2013%2013'%20enable-background%3D'new%200%200%2013%2013'%3E%3Cg%3E%3Cpath%20fill%3D'%23939398'%20d%3D'M5%2C1c2.2%2C0%2C4%2C1.8%2C4%2C4S7.2%2C9%2C5%2C9S1%2C7.2%2C1%2C5S2.8%2C1%2C5%2C1%20M5%2C0C2.2%2C0%2C0%2C2.2%2C0%2C5s2.2%2C5%2C5%2C5s5-2.2%2C5-5S7.8%2C0%2C5%2C0%20L5%2C0z'%2F%3E%3C%2Fg%3E%3Cline%20stroke%3D'%23939398'%20stroke-miterlimit%3D'10'%20x1%3D'12.6'%20y1%3D'12.6'%20x2%3D'8.2'%20y2%3D'8.2'%2F%3E%3C%2Fsvg%3E") no-repeat right #FFF
+		background-position-x: 60%
+		background-size: 13px 13px
+		cursor: pointer
+.dropzone
+	&
+		+size(185px,185px)
+		border: 1px solid #ddd
+		+make-row(0)
+		+flex-position(center,center)
+		+post(1rem)
+		position: relative
+		overflow: hidden
+	.btn--upload
+		+position(absolute, null 0 0 null)
+		z-index: 1
+	input
+		+size(100%,100%)
+		+xy(0,0)
+	// img
+	// 	height: 100% 
+	// +mobile
+	// 	+size(238px,238px)
+	// 	max-width: 100%
+
+	.dropzone__caption
+		&
+			text-align: center
+			color: #9B9B9B
+		i
+			font-size: 40px
+
+
+.dropdown
+	&
+		+post(0)
+	dd, dt, ul
+		margin: 0px
+		padding: 0px
+
+	a
+		color: #55595c
+		text-decoration: none
+		outline: none
+		&:visited
+			color: #55595c
+			text-decoration: none
+			outline: none
+		&:hover
+			color: #55595c
+	dt a
+		&:hover, &:focus
+			color: #55595c
+		background: url("../images/sprite/down.png") no-repeat right #FFF
+		background-position-x: 90%
+		padding: 0.375rem 2rem 0.375rem 0.75rem
+		height: 40px
+		display: block
+		width: 100%
+		+font-size(13px)
+		color: #333
+		border: 1px solid #333
+		border-radius: 40px
+		font-weight: 500
+		text-align: center
+		text-align-last: left
+		line-height: 1.6
+		span
+			cursor: pointer
+			display: block
+			padding: 5px
+	span.value
+		display: none
+	dd
+		position: relative
+	ul
+		+font-size(16px)
+		background: #fff none repeat scroll 0 0
+		border: 1px solid #ddd
+		color: #55595c
+		left: 0px
+		padding: 0.375rem 0.5rem
+		position: absolute
+		bottom: 45px
+		width: 120%
+		left: -10%
+		min-width: 170px
+		list-style: none
+		z-index: 999
+		animation: fade-out 0.3s forwards
+		li a
+			&
+				padding: 5px
+				display: block
+			&:hover
+				background-color: #241A17
+				color: #FFF
+		&.is-open
+			animation: fade-in 0.3s forwards
+.familyBrand--form
+	&
+		+post(1rem)
+		width: 190px
+		margin: auto
+	select
+		width: 190px
+		border: 1px solid #4A4A4A
+		padding: 0 13px
+		border-radius: 20px
+		background: url("../images/sprite/down.png") no-repeat right #FFF
+		background-position-x: 90%
+		color: #333
+		font-weight: 500
+		+media-breakpoint-down(md)
+			width: 340px
+			max-width: 100%
+			text-align-last: center
+	&.about--form
+		&
+			max-width: 90%
+			margin: auto
+		select
+			width: 100%
+			background-position-x: 95%
+		text-align-last: center
+	.search--wrapper &
+		select
+			width: 100%
+			padding: 0 30px
+
+label.checkbox
+	&
+		+make-row(0)
+		+flex-position(center,center)
+		+animate-fast
+		position: relative
+		height: 40px
+		border: 1px solid #333
+		border-radius: 40px
+		cursor: pointer
+		user-select: none
+
+	span
+		+font-size(16px)
+		+transform(none)
+		font-weight: 500
+		width: auto
+.checkbox + .checkbox
+	+pre(0)
+input.checkbox
+	position: absolute
+	left: -9999px
+input.checkbox:checked + label.checkbox
+	&
+		background-color: #333
+	span
+		color: white
+.media--form
+	&
+		+make-row(0)
+		+flex-position(center,flex-start)
+	.form--title
+		+post(0)
+		+font-size(16px)
+		font-weight: normal
+	> .col
+		+make-col(0)
+	select
+		+make-col(0)
+		+make-col-span(1.5)
+		+font-size(16px)
+		font-weight: normal
+		min-width: 90px
+		background-color: transparent
+		color: $main-color
+		background: url("../images/sprite/arrow--down--red.png") no-repeat right transparent
+		background-position-x: 92%

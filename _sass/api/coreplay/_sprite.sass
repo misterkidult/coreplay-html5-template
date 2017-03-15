@@ -1,0 +1,193 @@
+// Sprite
+
+=aspectRatio($w, $h)
+	&:after
+		display: block
+		content: ""
+		padding:
+			bottom: $h/$w*100%
+
+=ar($w, $h)
+	+aspectRatio($w, $h)
+
+// sprite with compass
+
+=s($src)
+	$str: str-slice($src, 0, -5)
+	$classname: "."+$str
+	#{$classname}
+		+sprite($src)
+
+=sr($src)
+	$str: str-slice($src, 0, -5)
+	$classname: "."+$str
+	#{$classname}
+		+sprite-responsive($src)
+
+=sprite-mixin($src)
+	// +text-hide
+	display: inline-block
+	// +aspectRatio(image-width($src), image-height($src))
+	position: relative
+	font-size: 0
+	line-height: 0
+	background:
+		size: contain
+		repeat: no-repeat
+		image: url('../images/'+$src)
+		position: center
+	// width: image-width($src)
+	// height: image-height($src)
+
+=sprite-responsive-mixin($src)
+	// +text-hide
+	display: inline-block
+	+aspectRatio(image-width($src), image-height($src))
+	position: relative
+	font-size: 0
+	line-height: 0
+	background:
+		size: contain
+		repeat: no-repeat
+		image: url('../images/'+$src)
+		position: center
+	// width: image-width($src)
+	// height: image-height($src)
+	// +media-breakpoint-down(sm)
+	// 	width: image-width($src) / 3 * 2
+
+=sprite($src)
+	+sprite-mixin('/sprite/'+$src)
+
+=sprite-responsive($src)
+	+sprite-responsive-mixin('/sprite/'+$src)
+
+=sprite-svg($src)
+	display: inline-block
+	font-size: 0
+	margin: 0
+	padding: 0
+	min-width: 20px
+	min-height: 20px
+	background:
+		repeat: no-repeat
+		image: url('../images/sprite/'+$src)
+		position: center
+
+=sprite-btn($src)
+	+sprite-mixin('/sprite-btn/'+$src)
+
+=sprite-txt($src)
+	+sprite-mixin('/sprite-txt/'+$src)
+
+=sprite-retina($src)
+	+sprite-mixin('/sprite-retina/'+$src)
+	width: image-width('/sprite-retina/'+$src)/2
+	height: image-height('/sprite-retina/'+$src)/2
+
+
+// 
+
+=sprite-nav-container($src)
+	&
+		font-size: 0
+	&
+		display: inline-block
+		+animate-fast
+		padding: 0
+		margin: 0
+	a,
+	span
+		&
+			display: inline-block
+			+animate-fast
+			+text-hide
+			// width: 100px
+			// height: 30px
+			padding: 0
+			margin: 0
+			background:
+				image: url("../images/sprite/"+$src+"_normal.png")
+		&:hover,
+		&.active,
+		&.disabled
+			background:
+				image: url("../images/sprite/"+$src+"_hover.png")
+	// >li.active
+	//     >a,
+	//     >span
+	//         background:
+	//             image: url("../images/sprite/"+$src+"_hover.png")
+
+
+
+=sprite-nav-setup($maps)
+	$bg-position: 0
+	>li > a,
+	>li > span
+		@each $maps, $item in $maps
+			&.#{map-get($item, class)}
+				width: map-get($item, width) + px
+				height: map-get($item, height) + px
+				background:
+					repeat: no-repeat
+					position: (-$bg-position + px) top
+			$bg-position: $bg-position + map-get($item, width)
+	width: $bg-position + px
+
+=sprite-nav-vertical-setup($maps)
+	$bg_position: 0
+	width: map-get(map-get($maps, 1), width) + px
+	a,
+	span
+		@each $maps, $item in $maps
+			&.#{map-get($item, class)}
+				+aspectRatio(map-get($item, width), map-get($item, height))
+				width: map-get($item, width) + px
+				max-height: map-get($item, height) + px
+				max-width: 100%
+				// height: map-get($item, height) + px
+				background:
+					size: cover
+					repeat: no-repeat
+					position: left (-$bg_position + px)
+			$bg_position: $bg_position + map-get($item, height)
+	
+=sprite-tab-container($src)
+	>li
+		display: inline-block
+		+animate-fast
+		padding: 0
+		margin: 0
+		>a,
+		>span
+			display: inline-block
+			+animate-fast
+			+text-hide
+			width: 100px
+			height: 30px
+			padding: 0
+			margin: 0
+			background:
+				image: url("../images/sprite/"+$src+"_normal.png")
+	>a,
+	>span
+		&:hover,
+		&.active,
+		&.disabled
+			background:
+				image: url("../images/sprite/"+$src+"_hover.png")
+
+=sprite-tab-setup($maps)
+	$bg-position: 0
+	>li > a,
+	>li > span
+		@each $maps, $item in $maps
+			&.#{map-get($item, class)}
+				width: map-get($item, width) + px
+				height: map-get($item, height) + px
+				background:
+					repeat: no-repeat
+					position: (-$bg-position + px) top
+			$bg-position: $bg-position + map-get($item, width)
+	width: $bg-position + px

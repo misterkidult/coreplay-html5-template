@@ -1,0 +1,50 @@
+- $root = "http://www.coreplay.com.tw/"
+- $title = "coreplay html5 template"
+- $description = ""
+- $ogimg = "fbshare.png"
+
+block vars
+
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		title
+			= $title
+		meta(name="description", content=$title)
+		meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+		//- meta(name="viewport", content="width=320")
+		link(rel="stylesheet" href="assets/css/sprite.css")
+		link(rel="stylesheet" href="assets/css/style.css")
+		link(rel="stylesheet" href="assets/css/adjunction.css")
+		link(rel="shortcut icon" href="favicon.ico" type="image/x-icon")
+		meta(property="og:title", content=$title)
+		meta(property="og:type", content="website")
+		meta(property="og:description", content=$description)
+		meta(property="og:url", content=$root)
+		meta(property="og:image", content=$root+"assets/images/"+$ogimg)
+		meta()
+		//- include _includes/tracking.pug
+		block head
+	body
+		.view.app
+			.app__loading
+				.loading__mask
+				.loading__img
+					.logo--icon__outside
+					.logo--icon__inside
+				.loading__caption
+					| loading
+			.app__drawer
+			.app__header
+			.app__content.viewport
+				block content
+			.app__footer
+				include _includes/footer
+			.app__modal
+				block modal
+		script(src="assets/js/framework.js")
+		script(src="assets/js/plugin.js")
+		script(src="assets/js/global.js")
+		block script

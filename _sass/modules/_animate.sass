@@ -1,0 +1,145 @@
++keyframes(up-and-down)
+	0%
+		transform: translateY(0)
+	50%
+		transform: translateY(-4px)
+	0%
+		transform: translateY(0)
+
+.btn--arrow
+	animation: up-and-down 555ms linear infinite
+
++keyframes(shine)
+	0%
+		opacity: 1
+	50%
+		opacity: .4
+	0%
+		opacity: 1
+
+
+.pace-running
+	.logo--icon__inside
+		animation: shine 777ms linear infinite
+	.logo--icon__outside
+		animation: shine 666ms linear infinite
+
+.pace-done
+	.logo--icon__inside
+		+animate
+		transition-duration: 555ms
+		transform: scale(1.4)
+	.logo--icon__outside
+		+animate
+		transition-duration: 666ms
+		transform: scale(1.8)
+	.loading__img,
+	.loading__caption
+		+animate
+		opacity: 0
+
+
+// 
+
++keyframes(meteor--shine)
+	0%
+		width: 30px
+		left: 0
+	10%
+		width: 30px
+		left: 0
+	50%
+		width: 800px
+		left: 0
+	90%
+		width: 30px
+		left: 770px
+	100%
+		width: 30px
+		left: 770px
+
++keyframes(meteor--life)
+	0%
+		opacity: 0
+	10%
+		opacity: 1
+		background: rgba(black, 0)
+	90%
+		opacity: 1
+		background: rgba(black, .1)
+	100%
+		opacity: 0
+
+
+
+.meteor
+	&
+		animation: meteor--life 1.7s linear infinite
+		animation-delay: 1.2s
+		animation-fill-mode: backwards
+	&:before
+		animation: meteor--shine 1.7s linear infinite
+		animation-delay: 1.2s
+		animation-fill-mode: backwards
+
+.meteor
+	&.m1
+		&
+			animation: meteor--life 1333ms linear infinite
+			animation-delay: 222ms
+		&:after
+			content: "m1"
+		&:before
+			animation: meteor--shine 1333ms linear infinite
+			animation-delay: 222ms
+	&.m2
+		&
+			animation: meteor--life 1567ms linear infinite
+			animation-delay: 987ms
+		&:after
+			content: "m2"
+		&:before
+			animation: meteor--shine 1567ms linear infinite
+			animation-delay: 987ms
+	&.m3
+		&
+			animation: meteor--life 1537ms linear infinite
+			animation-delay: 242ms
+		&:after
+			content: "m3"
+		&:before
+			animation: meteor--shine 1537ms linear infinite
+			animation-delay: 242ms
+	&.m4
+		&
+			animation: meteor--life 2654ms linear infinite
+			animation-delay: 675ms
+		&:after
+			content: "m4"
+		&:before
+			animation: meteor--shine 2654ms linear infinite
+			animation-delay: 675ms
+	&.m5
+		&
+			animation: meteor--life 1352ms linear infinite
+			animation-delay: 898ms
+		&:after
+			content: "m5"
+		&:before
+			animation: meteor--shine 1352ms linear infinite
+			animation-delay: 898ms
+	&.m6
+		&
+			animation: meteor--life 2314ms linear infinite
+			animation-delay: 3861ms
+		&:after
+			content: "m6"
+		&:before
+			animation: meteor--shine 2314ms linear infinite
+			animation-delay: 3861ms
+
+
+
+
+
+

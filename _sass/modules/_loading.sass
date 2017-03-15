@@ -1,0 +1,24 @@
+
+.app__loading
+	&
+		+position(fixed, 0 null null 0)
+		+size(100%, 100%)
+		+z(9999)
+	.loading__mask
+		+position(fixed, 0 null null 0)
+		+size(100%, 100%)
+		background:
+			color: #1a3066
+	.loading__img
+		&
+			+size(64px, 77px)
+			+abs-center
+			+fixed
+		> *
+			+absolute
+	.loading__caption
+		+abs-center
+		+fixed
+		+transform(translate(-50%,300%))
+		font-family: "HirukoProAlternate-Bld"
+		color: white

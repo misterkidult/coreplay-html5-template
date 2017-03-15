@@ -1,0 +1,513 @@
+$guide: #85D0CB
+
+=xy($x,$y)
+	position: absolute
+	left: $x
+	top: $y
+// bourbon 4
+=flex-position($arg1,$arg2)
+	-webkit-align-items: $arg1
+	-webkit-box-align: $arg1
+	-ms-flex-align: $arg1
+	align-items: $arg1
+	-ms-flex-pack: $arg2
+	-webkit-box-pack: $arg2
+	justify-content: $arg2
+
+=flex-direction($value: row)
+	@if $value == row-reverse
+		-webkit-box-direction: reverse
+		-webkit-box-orient: horizontal
+		-moz-box-direction: reverse
+		-moz-box-orient: horizontal
+	@else if $value == column
+		-webkit-box-direction: normal
+		-webkit-box-orient: vertical
+		-moz-box-direction: normal
+		-moz-box-orient: vertical
+	@else if $value == column-reverse
+		-webkit-box-direction: reverse
+		-webkit-box-orient: vertical
+		-moz-box-direction: reverse
+		-moz-box-orient: vertical
+	@else
+		-webkit-box-direction: normal
+		-webkit-box-orient: horizontal
+		-moz-box-direction: normal
+		-moz-box-orient: horizontal
+
+	-webkit-flex-direction: $value
+	-ms-flex-direction: $value
+	flex-direction: $value
+
+=transform($arg)
+	transform: $arg
+	-webkit-transform: $arg
+	-moz-transform: $arg
+	-o-transform: $arg
+	-ms-transform: $arg
+
+=transition-property($arg)
+	-webkit-transition-property: $arg
+	-ms-transition-property: $arg
+	transition-property: $arg
+
+=transition-duration($arg)
+	-webkit-transition-duration: $arg
+	-ms-transition-duration: $arg
+	transition-duration: $arg
+
+=transition-timing-function($arg)
+	-webkit-transition-timing-function: $arg
+	-ms-transition-timing-function: $arg
+	transition-timing-function: $arg
+
+=transform-origin($arg)
+	-webkit-transform-origin: $arg
+	-ms-transform-origin: $arg
+	transform-origin: $arg
+
+=transition-delay($arg)
+	-webkit-transform-delay: $arg
+	-ms-transform-delay: $arg
+	transition-delay: $arg
+	
+=appearance($arg)
+	-webkit-appearance: $arg
+	-ms-appearance: $arg
+	appearance: $arg
+
+=background-image($arg)
+	background-image: $arg
+
+=animation($arg)
+	-webkit-animation: $arg
+	-moz-animation: $arg
+	-o-animation: $arg
+	animation: $arg
+
+=columns($arg)
+	columns: $arg
+
+=keyframes($str)
+	@-webkit-keyframes #{$str}
+		@content
+	@-moz-keyframes #{$str}
+		@content
+	@-ms-keyframes #{$str}
+		@content
+	@-o-keyframes #{$str}
+		@content
+	@keyframes #{$str}
+		@content
+
+=linear-gradient($color1, $color2)
+	linear-gradient: $color1, $color2
+
+=transform-style($arg)
+	transform-style: $arg
+	-webkit-transform-style: $arg
+	-moz-transform-style: $arg
+	-o-transform-style: $arg
+	-ms-transform-style: $arg
+
+=perspective($arg)
+	perspective: $arg
+	-webkit-perspective: $arg
+	-moz-perspective: $arg
+	-o-perspective: $arg
+	-ms-perspective: $arg
+
+=perspective-origin($arg)
+	-webkit-perspective-origin: $arg
+	-moz-perspective-origin: $arg
+	-ms-perspective-origin: $arg
+	perspective-origin: $arg
+
+=backface-visibility($arg)
+	backface-visibility: $arg
+	-webkit-backface-visibility: $arg
+	-moz-backface-visibility: $arg
+	-o-backface-visibility: $arg
+	-ms-backface-visibility: $arg
+
+=transition($arg)
+	transition: $arg
+	-webkit-transition: $arg
+	-moz-transition: $arg
+	-o-transition: $arg
+	-ms-transition: $arg
+=animation($arg)
+	animation: $arg
+	-webkit-animation: $arg
+	-moz-animation: $arg
+	-o-animation: $arg
+	-ms-animation: $arg
+//
+
+=z($z)
+	z-index: $z
+
+// Sprite
+
+=aspectRatio($w, $h)
+	&:after
+		display: block
+		content: ""
+		padding:
+			bottom: $h/$w*100%
+
+=ar($w, $h)
+	+aspectRatio($w, $h)
+
+=inline-block
+	display: inline-block
+
+=guide
+	border:  1px solid $guide
+
+=text-hide
+	white-space: nowrap
+	text-indent: 100%
+	overflow: hidden
+
+=times
+	font-family: "Times New Roman", Georgia, Serif
+
+=ming
+	font-family: "新細明體", PMingLiu, MingLiU
+	
+=ms-font
+	font-family: "微軟正黑體", "Microsoft JhengHei", "Arial", sans-serif
+
+=hei
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif
+   
+=hiragino
+	font-family: "Charcoal CY","ヒラギノ角ゴ Std W8","Hiragino Kaku Gothic Std","Hiragino Kaku Gothic StdN W8","Hiragino Kaku Gothic ProN W6",Osaka,"メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic","Arial Unicode MS",Tahoma,Helvetica,sans-serif
+
+=avenir-next-condensed
+	font-family: "avenir-next-condensed", "微軟正黑體", "Microsoft JhengHei", "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif
+
+// Animation : Transition
+
+=clearAnimate
+	+transition-duration(0)
+
+=animate
+	+transition-property(all)
+	+transition-duration(.7s)
+	+transition-timing-function(ease-in-out)
+
+=animate-transform
+	+transition-property(transform)
+	+transition-duration(.7s)
+	+transition-timing-function(ease-in-out)
+		
+=animate-slow
+	+transition-property(all)
+	+transition-duration(1s)
+	+transition-timing-function(ease-in-out)
+
+=animate-fast
+	+transition-property(all)
+	+transition-duration(.3s)
+	+transition-timing-function(ease-in-out)
+
+=fade-fast
+	+transition-property(opacity)
+	+transition-duration(.3s)
+	+transition-timing-function(ease-in-out)
+
+=animate-sp
+	+transition-property(all)
+	+transition-duration(.7s)
+	+transition-timing-function(cubic-bezier(0.55, 0, 0.55, 0.2))
+// absolute-positing
+
+=layer
+	position: relative
+	>*
+		position: absolute
+
+=v-center
+	margin: auto
+	position: absolute
+	top: 0
+	bottom: 0
+			
+=h-center
+	margin: 0 auto
+	position: absolute
+	left: 0
+	right: 0
+	
+=vh-center
+	margin: auto
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+
+// Button
+	
+=btn2frame($normal, $hover)
+	+animate-fast
+	+inline-block
+	+text-hide
+	+inline-block
+	+aspectRatio(image-width("/sprite/"+$normal), image-height("/sprite/"+$hover))
+	position: relative
+	font-size: 0
+	line-height: 0
+	background:
+		size: contain
+		repeat: no-repeat
+		image: url('../images/sprite/'+$normal)
+		position: center
+	width: image-width("/sprite/"+$normal)
+	&:hover,
+	&::before,
+	&.active
+		background:
+			image: url('../images/sprite/'+$hover)
+	&::before
+		display: none
+			
+=btnOpacity
+	+animate-short
+	+opacity(.7)
+	&:hover
+		+opacity(1)
+
+=clearfix
+	&:after
+		content: ""
+		width: 100%
+		display: block
+		clear: both
+
+=v-center
+	&:before
+		+inline-block
+		content: ""
+		vertical-align: middle
+		width: 0
+		height: 100%
+	// &
+	//     position: relative
+	//     text-align: center
+	
+		// background: red
+		// margin:
+		//  left: -5px
+	// > *:first-child
+	//     +inline-block
+	//     // width: 90%
+	//     vertical-align: middle
+	//     text-align: center
+	//     // margin:
+	//     //     left: -.2em
+
+// Grid Helper
+
+.pre1
+	margin:
+		top: 0 !important
+
+.post0
+	margin:
+		bottom: 0 !important
+
+$margin-list: 1rem 2rem 3rem 4rem 5rem 6rem 7rem 8rem 9rem 10rem
+@each $current-margin in $margin-list
+	$i: index($margin-list, $current-margin)
+	.pre#{$i}
+		margin:
+			top: $current-margin !important
+	.post#{$i}
+		margin:
+			bottom: $current-margin !important
+
+=pre($n)
+	margin:
+		top: $n !important
+
+=post($n)
+	margin:
+		bottom: $n !important
+
+=yx($y, $x)
+	position: absolute
+	top: $y
+	left: $x
+			
+// CSS
+
+// +breakpoint($mobile)
+//     html
+//         overflow-x: hidden
+
+ol.cjk
+	> li
+		list-style-type: cjk-ideographic
+
+ol.upper-roman
+	> li
+		list-style-type: upper-roman
+
+ol.upper-alpha
+	> li
+		list-style-type: upper-alpha
+
+ol.lower-alpha
+	> li
+		list-style-type: lower-alpha
+
+.del-text
+	text-decoration: line-through
+
+.disable
+	pointer-events: none
+
+.show-guide
+	+guide
+
+.frameset
+	position: relative
+	.frame
+		position: absolute
+		display: none
+		&.active
+			position: static
+			display: block
+
+//////////////////// Reset Bootstrap
+
+.nav-list
+	li
+		+inline-block
+
+//////////////////// responsive-state
+
+.responsive-state
+	+inline-block
+	position: fixed
+	z-index: 999999
+	background: red
+	color: white
+	padding: 0 10px
+	left: 0
+	bottom: 0
+
+.visible-xs-block,
+.visible-sm-block,
+.visible-md-block,
+.visible-lg-block,
+.visible-xl-block
+	display: none
+
+.visible-xs-block
+	+media-breakpoint-only(xs)
+		display: block !important
+
+.visible-sm-block
+	+media-breakpoint-only(sm)
+		display: block !important
+
+.visible-md-block
+	+media-breakpoint-only(md)
+		display: block !important
+
+.visible-lg-block
+	+media-breakpoint-only(lg)
+		display: block !important
+
+.visible-xl-block
+	+media-breakpoint-only(xl)
+		display: block !important
+
+//
+
+@function calculateRem($size)
+	$remSize: $size / 16px
+	@return $remSize * 1rem
+
+
+@mixin font-size($size)
+	font-size: $size
+	font-size: calculateRem($size)
+
+@mixin opacity($opacity)
+	opacity: $opacity
+	$opacity-ie: $opacity * 100
+	filter: alpha(opacity=$opacity-ie)
+
+//update by Hiking
+
+=relative
+	position: relative
+
+=absolute
+	position: absolute
+
+=fixed
+	position: fixed
+
+=static
+	position: static
+
+=abs-center
+	+absolute
+	+transform(translate(-50%, -50%))
+	top: 50%
+	left: 50%
+
+=abs-v-center
+	+absolute
+	+transform(translateY(-50%))
+	top: 50%
+
+=abs-h-center
+	+absolute
+	+transform(translateX(-50%))
+	left: 50%
+
+
+@mixin default
+	@content
+
+@mixin desktop
+	+media-breakpoint-up(lg)
+		@content
+
+@mixin tablet
+	+media-breakpoint-only(md)
+		@content
+
+@mixin mobile
+	+media-breakpoint-down(sm)
+		@content
+
+@mixin small-screen
+	+media-breakpoint-down(lg)
+		@content
+
+@mixin wide-screen
+	+media-breakpoint-up(xl)
+		@content
+
+
+@mixin mq($mq)
+	+media-breakpoint-only($mq)
+		@content
+
+@mixin mq-up($mq)
+	+media-breakpoint-up($mq)
+		@content
+
+
+@mixin mq-down($mq)
+	+media-breakpoint-down($mq)
+		@content

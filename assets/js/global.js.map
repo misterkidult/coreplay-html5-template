@@ -1,0 +1,11 @@
+{
+  "sources" : [
+    "..\/..\/_coffeescripts\/global.coffee"
+  ],
+  "mappings" : "",
+  "names" : [
+
+  ],
+  "file" : "global.js",
+  "version" : 3
+}

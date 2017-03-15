@@ -1,0 +1,112 @@
+#menu--toggle[type="checkbox"]:not(:checked),
+#menu--toggle[type="checkbox"]:checked
+  display: none
+
+.menu--toggle__trigger,
+.menu--toggle__burger,
+.menu--toggle__burger:before,
+.menu--toggle__burger:after
+  position: absolute
+  right: 30px
+  top: 28px
+  width: 20px
+  height: 2px
+  background-color: $color-text
+  border-radius: 2px
+  cursor: pointer
+  z-index: 100
+  transition: $variable-burger-animation-time $variable-menu-animation-function
+
+.menu--toggle__trigger
+  height: 2em
+  background: none
+
+.menu--toggle__burger
+  &:before
+    content: ""
+    top: 6px
+    left: 0
+
+  &:after
+    content: ""
+    top: 12px
+    left: 0
+
+.menu__body
+  position: absolute
+  width: 50px
+  height: 50px
+  right: 15px
+  top: 10px
+  margin: 0
+  padding: 0
+  background-color: $color-menu
+  border-radius: 100%
+  box-shadow: 3px 3px 7px rgba($color-text, 0.2)
+  z-index: 10
+  animation: checkboxUncheckedAnimation $variable-burger-animation-time both
+
+// .menu--hamburger
+//   position: relative
+
+.scrollspy
+  +size(100vw,100vh)
+  display: none
+  text-decoration: none
+  text-transform: none
+  list-style: none
+  outline: 0
+  +z(11)
+  position: absolute
+  top: 0
+  left: 0
+.menu__body-element
+  text-indent: 2em
+
+#menu--toggle:checked + .menu--toggle__trigger
+  & + .menu--toggle__burger
+    // top: 35px
+    transform: rotate(405deg)
+    transition: transform $variable-burger-animation-time $variable-burger-animation-function
+
+    &:before
+      top: 0
+      transform: rotate(-90deg)
+      transition: transform $variable-burger-animation-time $variable-burger-animation-function
+
+    &:after
+      top: 0
+      transform: rotate(90deg)
+      transition: transform $variable-burger-animation-time $variable-burger-animation-function
+
+  & + .menu--toggle__burger + .menu__body
+    animation: checkboxCheckedAnimation $variable-menu-animation-time $variable-menu-animation-function both
+    .scrollspy
+      +make-row(0)
+      +flex-position(center,center)
+
+@keyframes checkboxCheckedAnimation
+  25%
+    border-top-right-radius: 0
+    right: 0
+    top: 0
+  100%
+    width: 100vw
+    height: 100vh
+    border-radius: 0
+    right: 0
+    top: 0
+
+@keyframes checkboxUncheckedAnimation
+  0%
+    width: 100vw
+    height: 100vh
+
+@keyframes changeWidthOfElementAnimation
+  50%
+    width: 0
+
+  100%
+    width: 100%
+
+

@@ -1,0 +1,211 @@
+.wrapper
+	+desktop
+		+size(960px, 500px)
+		+abs-center
+	+tablet
+		+size(960px, 500px)
+		+abs-center
+		max-width: 90%
+		margin: 0 auto
+	+mobile
+		max-width: 90%
+		margin: 0 auto
+		margin:
+			top: 60px
+
+
+.associated
+	&
+		margin:
+			top: 40px
+	+mobile
+		margin:
+			top: 20px
+
+.logo--group
+	&
+		width: 600px
+		max-width: 100%
+		align-items: center
+		display: flex
+	> a
+		display: inline-block
+	a + a
+		margin:
+			left: 40px
+	+mobile
+		a + a
+			margin:
+				left: 20px
+
+// 
+
+.logo
+	&
+		+animate
+		+position(absolute, 50vh null null 50vw)
+		color: #D8137D
+		transform: translate(-50%, -50%)
+		transition-duration: 1.6s
+		font-family: "HirukoProAlternate-Bld"
+		font-size: 120px
+		color: white
+		opacity: 1
+	span
+		margin:
+			top: 8px
+		display: block
+		text-align: center
+		font-family: 'HirukoPro-Book', 'Noto Sans TC', sans-serif
+		font-size: 30px
+		font-weight: 800
+	&.from
+		opacity: 0
+		margin:
+			top: 88px
+	+tablet
+		font-size: 90px
+	+mobile
+		font-size: 60px
+
+.stage3D
+	&
+		+animate-fast
+		+size(100px, 100px)
+		+abs-center
+		position: fixed
+		transition-duration: 2s
+		perspective: 200px
+		transform-origin: center center
+		z-index: -1
+		// background: rgba(red, .1)
+	.fp-viewing-0 &
+		top: 45%
+	.fp-viewing-1 &
+		&
+			// perspective: 200px
+			top: 60%
+		+mobile
+			left: 10%
+	.fp-viewing-2 &
+		&
+			// perspective: 150px
+			top: 40%
+			left: 40%
+		+mobile
+			top: 30%
+			left: 100%
+	+tablet
+		transform: scale(.8)
+	+mobile
+		transform: scale(.5)
+		top: 40%
+		left: 40%
+
+.meteor3D
+	&
+		+animate-fast
+		+position(absolute, 50% null null 50%)
+		// transform: translate(-50%, -50%)
+		transition-duration: 3s
+		transform-style: preserve-3d
+		transform-origin: center center
+		width: 200px
+		height: 200px
+		// background: rgba(red, .2)
+		margin:
+			left: -100px
+			top: -100px
+	&:after
+		+position(absolute, 0 null null 0)
+		content: "meteor3D"
+		color: white
+		display: none
+	.pace-running &
+		transform: translate3d(0, -630px, -50px) rotateX(-100deg) scale(2)
+	.fp-viewing-0 &
+		transform: rotateX(-6deg) scale(.7)
+	.fp-viewing-1 &
+		transform: translate3d(0, 30px, -50px) rotateX(-100deg) scale(.8)
+	.fp-viewing-2 &
+		transform: translate3d(-200px, -200px, -50px) rotateZ(-27deg) rotateY(10deg) rotateX(7deg) scale(1.1)
+
+.meteors
+	+position(absolute, 50% null null 50%)
+	transform: rotateZ(135deg) translate(-50%, -50%)
+	transform-origin: center center
+	transform-style: preserve-3d
+
+.meteor
+	&
+		+absolute
+		width: 800px
+		height: 30px
+		transform: translate(-50%, -50%)
+		border-radius: 15px
+	&:after
+		+position(absolute, 0 null null 0)
+		content: "m0"
+		color: white
+		display: none
+	&:before
+		+position(absolute, 0 null null 0)
+		border-radius: 15px
+		height: 30px
+		width: 30px
+		background:
+			image: url(../images/sprite/color.png)
+			position: right center
+		content: ""
+	&.m0
+		top: -36px
+	&.m1
+		&
+			transform: scale(.6) translate(-50%, -50%)
+			top: -136px
+			left: -134px
+		&:after
+			content: "m1"
+		&:before
+			background:
+				image: url(../images/sprite/color1.png)
+	&.m2
+		&
+			transform: scale(.75) translate(-50%, -50%)
+			top: 96px
+			left: -234px
+		&:before
+			background:
+				image: url(../images/sprite/color.png)
+	&.m3
+		&
+			transform: scale(.9) translate(-50%, -50%)
+			top: 30px
+			left: -164px
+		&:before
+			background:
+				image: url(../images/sprite/color2.png)
+	&.m4
+		&
+			transform: scale(.77) translate(-50%, -50%)
+			top: -101px
+			left: -204px
+		&:before
+			background:
+				image: url(../images/sprite/color1.png)
+	&.m5
+		&
+			transform: scale(.94) translate(-50%, -50%)
+			top: 54px
+			left: 74px
+		&:before
+			background:
+				image: url(../images/sprite/color1.png)
+	&.m6
+		&
+			transform: scale(.88) translate(-50%, -50%)
+			top: -43px
+			left: -80px
+		&:before
+			background:
+				image: url(../images/sprite/color2.png)

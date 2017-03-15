@@ -1,0 +1,18 @@
+*
+	box-sizing: border-box
+
+.hide
+	display: none !important
+
+.in.active
+	display: block !important
+
+.hide-in-mobile
+	+mobile
+		display: none !important
+
+.show-in-mobile
+	&
+		display: none !important
+	+mobile
+		display: block !important

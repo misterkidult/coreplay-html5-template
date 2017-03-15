@@ -1,0 +1,14 @@
+#pv.modal.fade
+	.modal-content
+		.push-height
+		.wrapper
+			.mov-playback(data-backdrop="true")
+				a.btn-modal-close(data-dismiss="modal")
+					i.fa.fa-angle-right
+					i.fa.fa-angle-left
+				- $yid = "ytPv"
+				- $vid = "b1LiBTzBqI0"
+				.embed-responsive.embed-responsive-16by9
+					iframe.embed-responsive-item(id=$yid, src="https://www.youtube.com/embed/"+$vid+"?controls=1&rel=0&autoplay=0&enablejsapi=1", frameborder="0", allowfullscreen )
+
+				//- include yt.jade

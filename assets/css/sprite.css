@@ -1,0 +1,83 @@
+.logo--icon {
+  display: inline-block;
+  position: relative;
+  font-size: 0;
+  line-height: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../images//sprite/logo--icon.svg");
+  background-position: center; }
+
+.logo--icon {
+  width: 64px;
+  height: 77px; }
+
+.logo--icon__outside {
+  display: inline-block;
+  position: relative;
+  font-size: 0;
+  line-height: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../images//sprite/logo--icon__outside.svg");
+  background-position: center; }
+
+.logo--icon__outside {
+  width: 64px;
+  height: 77px; }
+
+.logo--icon__inside {
+  display: inline-block;
+  position: relative;
+  font-size: 0;
+  line-height: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../images//sprite/logo--icon__inside.svg");
+  background-position: center; }
+
+.logo--icon__inside {
+  width: 64px;
+  height: 77px; }
+
+.logo--coreplus {
+  display: inline-block;
+  position: relative;
+  font-size: 0;
+  line-height: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../images//sprite/logo--coreplus.svg");
+  background-position: center; }
+
+.logo--coreplus {
+  width: 158px;
+  height: 82px; }
+
+.logo--ivplus {
+  display: inline-block;
+  position: relative;
+  font-size: 0;
+  line-height: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../images//sprite/logo--ivplus.svg");
+  background-position: center; }
+
+.logo--ivplus {
+  width: 64px;
+  height: 70px; }
+
+.logo--kidsicon {
+  display: inline-block;
+  position: relative;
+  font-size: 0;
+  line-height: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../images//sprite/logo--kidsicon.svg");
+  background-position: center; }
+
+.logo--kidsicon {
+  width: 236px;
+  height: 60px; }
