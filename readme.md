@@ -19,12 +19,12 @@ HTML Markup部份， 參考了 MDL 和 framework 7
 
 ## CSS
 
-在寫 CSS 之前，掌握以下幾個原則：
-預測 Predictable / 複用 Reusable / 維護 Maintainable / 延展 Scalable
-結構和外觀分離 Separate Structure and Skin
+在寫 CSS 之前，掌握以下幾個原則：  
+預測 Predictable / 複用 Reusable / 維護 Maintainable / 延展 Scalable  
+結構和外觀分離 Separate Structure and Skin  
 容器和內容分離 Separate Container and Content
 
-命名原則 BEM 模式：物件—形容__成分
+命名原則 BEM 模式：物件—形容__成分，ex. ".box--media__body"  
 根據 SASS 架構參考 OOCSS / SMACSS，將 CSS 分成：
 * Base
     * css reset
@@ -76,6 +76,7 @@ Responsive Web Design 的部份，我們基本上不分拆手機平版的 CSS，
 * 和 Compass 分手，擁抱 libsass，Sprite CSS 另尋處理方案
 * 追蹤最新的前端變化，持續更新中
 
-加速作業流程，同時最大化修改的彈性，以快速應用在各類專案中！
+加速作業流程，同時最大化修改的彈性，以快速應用在各類專案中！  
+我們團隊中前端作業的基本架構。  
 如有任何問題，歡迎與作者討論：
 https://www.facebook.com/misterkidult
