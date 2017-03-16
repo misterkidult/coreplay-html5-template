@@ -65,7 +65,7 @@ init = ->
 	# checkHash()
 	setTimeout( ->
 		$(".app__loading").fadeOut 777, ->
-			$(".logo").removeClass "from"
+			$(".from").removeClass "from"
 	, 777)
 	$mq = window.matchMedia "(max-width: 62em)"
 	# console.log $mq.matches
