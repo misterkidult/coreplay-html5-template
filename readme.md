@@ -2,6 +2,8 @@
 
 coreplay html5 template 是基於 HTML / CSS / JS : Pug / Sass / Coffeescript 的工具模版，目的是為了將常用的 html 功能作成模組，加速作業流程，同時最大化修改的彈性。
 
+#### 需使用 Codekit 或 Webpack 編譯
+
 ## HTML
 
 HTML Markup部份， 參考了 MDL 和 framework 7
