@@ -1,23 +1,21 @@
 ## app
 
 $ ->
-	$('.app__content.viewport').fullpage
-		scrollBar: true
-		fitToSection: true
-		autoScrolling: true
-		onLeave: onLeaveHandler
+	# $('.app__content.viewport').fullpage
+	# 	scrollBar: true
+	# 	fitToSection: true
+	# 	autoScrolling: true
+	# 	scrollOverflow: true
+	# 	scrollingSpeed: 700
+	# 	onLeave: onLeaveHandler
+	# 	afterLoad: afterLoadHandler
 	return
 
-afterRenderHander = () ->
-	console.log "afterRenderHander"
+afterLoadHandler = () ->
+	# console.log "afterLoadHandler"
+	ga 'send', 'pageview', location.hash
 	return
 
 onLeaveHandler = (index, nextIndex, direction) ->
-	# console.log nextIndex
-	if nextIndex == 4
-		$.fn.fullpage.setAutoScrolling(false)
-		$.fn.fullpage.setFitToSection(false)
-	else
-		$.fn.fullpage.setAutoScrolling(true)
-		$.fn.fullpage.setFitToSection(true)
+	console.log "onLeaveHandler"
 	return

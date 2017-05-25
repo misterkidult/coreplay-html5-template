@@ -10,21 +10,188 @@ block script
 block modal
 
 block content
-	.section
-		.wrapper
-			.logo.from
-				| Hello World !
-				span
-					| coreplay html5 template
-			.links.from
-				a(href="https://github.com/misterkidult/coreplay-html5-template")
-					span
-						| Github
-					span
-						| Github
-				a(href="https://www.facebook.com/core.play.tw/")
-					span
-						| Facebook
-					span
-						| Facebook
-	
+	.section.section--cover(data-anchor="cover")
+		.float
+			.lines
+				.line
+				.line
+				.line
+			.blocks
+				.yellow__block
+			.triangles
+				.float__triangle
+		.container--float
+			.container
+				.cover--content
+					.logo__kids
+					.cover__title
+						| 大人和小孩的玩具箱
+					.cover__subTitle
+						| 「我們是，玩具選物店」
+					.pic__train
+		.section--intro(data-anchor="intro")
+			.container--float
+				.container
+					.intro--content
+						.tt__slogan
+						.intro__title
+							| 玩具要大家一起共享玩樂
+							br
+							| 才能發生共鳴
+						p
+							| 這裡沒有華麗的聲光玩具
+							br
+							| 只有單純與美好
+							br
+							| 給大人一個心靈的綠洲
+							br
+							| 給小孩一個富於想像力與創造力的世界
+						.intro__quote
+							| 我們不是因為年老而停止玩樂
+							br
+							| 我們是因停止玩樂才會變老
+							br
+							span —蕭伯納
+						.row--button
+							button.button--basic
+								label
+									| 了解更多
+			.intro--pic
+				.pic__cat
+				.pic__zebra
+				.pic__crocodile
+				.pic__alpaca
+	.section.section--toy(data-anchor="toy")
+		.float
+			.blocks
+				.blue__block
+			
+		.container--float
+			.container
+				.circles
+					.float__circle
+				
+				
+				.toy--header
+					.toy__title
+						| 精選玩具
+						.bg__toyTitle
+				#eguchiToys.toy--content
+					a.toy--pic
+						.pic__eguchiToys
+					.toy--text
+						.toy__title
+							| 在心中默默感動的
+							br
+							| Eguchi Toys
+						p
+							| 他們所有的產品都是圍繞在「跟著孩子一起快樂成長」的想法，
+							br
+							| 觀察他們如何把玩這些玩具，同時也被這些低調的細膩設計感動，
+							br
+							| 這就是 Eguchi Toys 的魅力。
+						button.button--basic
+							label
+								| 立即購買
+				#owlAndDog.toy--content.reverse
+					a.toy--pic
+						.pic__owlAndDog
+					.toy--text
+						.toy__title
+							| 是玩具也是繪本
+							br
+							| Owl & Dog Playbooks
+						p
+							| 來自英國的新童書品牌 Owl & Dog
+							br
+							| 不是普通的書，
+							br
+							| 更像是要讓想像力一飛沖天的火箭包！
+						button.button--basic
+							label
+								| 立即購買
+				#unpaintedTrain.toy--content
+					.triangles
+						.float__triangle
+					a.toy--pic
+						.pic__unpaintedTrain
+					.toy--text
+						.toy__title
+							| 可自行彩繪的
+							br
+							| unpainted train
+						p
+							| 他們所有的產品都是圍繞在「跟著孩子一起快樂成長」的想法，
+							br
+							| 觀察他們如何把玩這些玩具，同時也被這些低調的細膩設計感動，
+							br
+							| 這就是 Eguchi Toys 的魅力。
+						button.button--basic
+							label
+								| 立即購買
+				#donguri.toy--content.reverse
+					.rects
+						.float__rect
+					a.toy--pic
+						.pic__donguri
+					.toy--text
+						.toy__title
+							| Donguri~
+							br
+							| 來場短跑賽吧
+						p
+							| 橡實、橡實爺爺跟橡實婆婆、蘑菇
+							br
+							| 利用珠彈滾動和角度的傾斜計產生一種短距的企鵝滑步
+							br
+							| 笨拙又無違合感的討喜
+						button.button--basic
+							label
+								| 立即購買
+
+	.section.section--about(data-anchor="about")
+		.lines
+			.line
+			.line
+		.blocks
+			.red__block
+		.rects
+			.float__rect
+		.container--float
+			.container
+				.about--header
+					.about__title
+						| 關於 Kids+Icon
+						.bg__toyTitle
+				.about--content
+					.about--pic
+						.pic__invite
+					.about__title
+						| 收集來自世界各地
+						br
+						| 有趣有質感的玩具選物給消費者
+					p
+						| Kids+ Icon 以「大人和小孩的玩具箱」自許，
+						br
+						| 收集商品，面對面介紹玩具之外，
+						br
+						| 不定時舉辦活動和消費者介紹玩具背後設計的精彩之處！
+						br
+						| 歡迎加入粉絲團搶先追蹤！
+					.row--button
+						button.button--basic
+							label
+								| 誠摯邀請你加入粉絲團
+
+	.section__bottom
+		footer
+			.lines
+				.line
+			.container
+				.footer--content
+					.footer--pic
+						.pic__sloganBlack
+					.footer__powerBy
+						| power by
+					.footer__title
+						| coreplay

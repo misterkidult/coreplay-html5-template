@@ -1,16 +1,16 @@
 ## swiper
 
 viewSwiper = null
-appSwiper = null
+demoSwiper = null
 
 $ ->
-	if $("#appSwiper").length > 0
-		appSwiper = new Swiper "#appSwiper",
-			speed: 1777
-			direction: "vertical"
-			mousewheelControl: true
+	if $("#demoSwiper").length > 0
+		demoSwiper = new Swiper "#demoSwiper",
+			speed: 333
+			loop: true
+			autoplay: 1333
 			# autoHeight: true
-		appSwiper.on "slideChangeStart", (e) ->
+		demoSwiper.on "slideChangeStart", (e) ->
 			console.log e
 			return
 	return

@@ -1,0 +1,93 @@
+
+.section
+	.container--float
+		padding:
+			top: 0px
+			bottom: 100px
+		+mq-down(md)
+			padding:
+				top: 0px
+				bottom: 70px
+.section--cover
+	&
+		+rem(margin-bottom, 200px)
+	.container--float
+		padding:
+			top: 80px
+			bottom: 0
+	+mq(md)
+		.container
+			max-width: 100%
+			margin: 0
+			padding: 0
+	+mq-down(md)
+		+rem(margin-bottom, 77px)
+	+mobile
+		&
+			+rem(margin-bottom, 17px)
+		.container
+			max-width: 100%
+			margin: 0
+			padding: 0
+
+
+.section--intro
+	position: relative
+	width: 100%
+	+rem(margin-top, 0px)
+	+rem(margin-top, -125px)
+	+mq-down(md)
+		+rem(margin-top, -50px)
+		margin-bottom: 5rem
+	.container--float
+		padding:
+			top: 0
+			bottom: 0
+.section--toy
+	.container--float
+		padding:
+			bottom: 0px
+.section--about
+	.container--float
+		padding:
+			bottom: 50px
+	+mq(md)
+		.container
+			max-width: 100%
+			margin: 0
+			padding: 0
+	+mq-down(sm)
+		&
+			+flex-center(0,flex-start)
+		.container
+			max-width: 100%
+			margin: 0
+			padding: 0
+.section__bottom
+	text-align: center
+
+	
+
+
+body
+	&
+		+animate
+		transition-duration: 3s
+		background:
+			size: cover
+			repeat: no-repeat
+			position: center top
+			// attachment: fixed
+	// &.fp-viewing-cover
+	// 	background:
+	// 		position: center top
+	// &.fp-viewing-about,
+	// &.fp-viewing-service
+	// 	background:
+	// 		position: center center
+	// &.fp-viewing-insider,
+	// &.fp-viewing-corp,
+	// &.fp-viewing-team,
+	// &.fp-viewing-contact
+	// 	background:
+	// 		position: center bottom

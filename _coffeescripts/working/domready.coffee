@@ -46,18 +46,18 @@ $ ->
 	# 			$("body").addClass "cut1"
 	# 	return
 
-	$(document).mousemove (e) ->
-		box = $(".meteor3D")
-		# $mouseAry++
-		boxCenter = [
-			box.offset().left + box.width() / 2
-			box.height() / 2
-		]
-		angle = Math.atan2(e.pageY - boxCenter[0], (boxCenter[1]) )*(90/Math.PI)
-		angle = angle * 3
-		# box.css 'transform' : 'rotateX( ' + angle + 'deg)' 
-		# console.log angle
-		return
+	# $(document).mousemove (e) ->
+	# 	box = $(".meteor3D")
+	# 	# $mouseAry++
+	# 	boxCenter = [
+	# 		box.offset().left + box.width() / 2
+	# 		box.height() / 2
+	# 	]
+	# 	angle = Math.atan2(e.pageY - boxCenter[0], (boxCenter[1]) )*(90/Math.PI)
+	# 	angle = angle * 3
+	# 	# box.css 'transform' : 'rotateX( ' + angle + 'deg)' 
+	# 	# console.log angle
+	# 	return
 	return
 
 

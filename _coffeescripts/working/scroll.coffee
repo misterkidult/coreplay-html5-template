@@ -12,6 +12,11 @@ $ ->
 scrollEvent = ->
 	st = $(window).scrollTop()
 	sv = $(window).height()	
+	# console.log st
+	if st >= 60
+		$("body").addClass "is-scrolled"
+	else
+		$("body").removeClass "is-scrolled"
 	return
 
 $ ->

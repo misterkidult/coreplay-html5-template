@@ -4,11 +4,12 @@ body
 		+padding(0)
 		// background:
 		// 	color: transparent
-		overflow: hidden
+		overflow-x: hidden
+		overflow-y: scroll
 		-webkit-overflow-scrolling: touch
 		color: #000
 		background:
-			color: $paper
+			color: #FFF
 	&.is-open-drawer
 		overflow: hidden
 
@@ -18,13 +19,56 @@ body
 
 .app__content
 	+relative
+	width: 100vw
+	overflow-x: hidden
+	// overflow-y: scroll
+	// -webkit-overflow-scrolling: touch
+	// height: 100vh
+	
 	
 .content--wrapper
 	+relative
 	width: 100%
 
 footer
-	position: relative
+	+relative
+	padding: 20px
+	width: 100%
+
 
 .container
 	+relative
+
+.section
+	&
+		+relative
+		+flex-center(0,flex-start,center)
+		min-height: 100vh
+		text-align: center
+
+.container--float
+	width: 100%
+	// +abs-center
+	// border: 1px solid red
+	// max-width: 920px
+	// height: 100%
+	// min-height: 550px
+
+
+header
+	.logo--icon
+		&
+			+animate-fast
+			+position(fixed, 20px null null 20px)
+			z-index: 9
+			opacity: 1
+		.fp-viewing-contact &
+			opacity: 0
+			pointer-events: none
+		+mobile
+			+position(absolute, 20px null null 20px)
+
+
+
+
+

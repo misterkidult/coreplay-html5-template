@@ -1,0 +1,786 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"t",
+				"tw\ttext-wrap"
+			],
+			[
+				"o",
+				"ov\toverflow"
+			],
+			[
+				"draw",
+				"drawShadow"
+			],
+			[
+				"del",
+				"delayFactor"
+			],
+			[
+				"ani",
+				"animateLine"
+			],
+			[
+				"stroke",
+				"strokeStyle"
+			],
+			[
+				"deg",
+				"deg_to_pi"
+			],
+			[
+				"pre",
+				"prevSection"
+			],
+			[
+				"lo",
+				"loadedSection"
+			],
+			[
+				"add",
+				"addLabel"
+			],
+			[
+				"scrollP",
+				"scrollPageTo"
+			],
+			[
+				"ease",
+				"easeInOut"
+			],
+			[
+				"D",
+				"DIRECTION_ALL"
+			],
+			[
+				"go",
+				"goToPrevSlide"
+			],
+			[
+				"goTo",
+				"gotoSlide"
+			],
+			[
+				"got",
+				"goToNextSlide"
+			],
+			[
+				"ke",
+				"keyCodes"
+			],
+			[
+				"goto",
+				"goToPrevSlide"
+			],
+			[
+				"is",
+				"isMousewheel"
+			],
+			[
+				"cont",
+				"controls"
+			],
+			[
+				"rec",
+				"recommend--title"
+			],
+			[
+				"dra",
+				"drawTheMap"
+			],
+			[
+				"geo",
+				"geometry"
+			],
+			[
+				"wire",
+				"wireframeLinewidth"
+			],
+			[
+				"li",
+				"light2"
+			],
+			[
+				"re",
+				"renderer"
+			],
+			[
+				"set",
+				"setTimeout"
+			],
+			[
+				"init",
+				"initAnim"
+			],
+			[
+				"ver",
+				"vertices"
+			],
+			[
+				"m",
+				"mesh"
+			],
+			[
+				"flex",
+				"flex-end"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"p",
+				"p\tpadding"
+			],
+			[
+				"list-grou",
+				"list-group-item"
+			],
+			[
+				"tar",
+				"text-align: 〔property〕"
+			],
+			[
+				"df",
+				"d-f\tdisplay: flex;"
+			],
+			[
+				"messag",
+				"messageForm"
+			],
+			[
+				"message",
+				"message"
+			],
+			[
+				"input",
+				"inputb\tinput - button"
+			],
+			[
+				"outer",
+				"outerHeight"
+			],
+			[
+				"tal",
+				"ta:l\ttext-align:left"
+			],
+			[
+				"radar",
+				"radarOptions"
+			],
+			[
+				"ra",
+				"radarOptions"
+			],
+			[
+				"di",
+				"d:ib\tdisplay:inline-block"
+			],
+			[
+				"pr",
+				"pos:r\tposition:relative"
+			],
+			[
+				"v",
+				"va\tvertical-align"
+			],
+			[
+				"po",
+				"pos:s\tposition:static"
+			],
+			[
+				"about",
+				"about--bg--mb.jpg\tw:750 h:490"
+			],
+			[
+				"bg",
+				"bg:n\tbackground:none"
+			],
+			[
+				"c",
+				"cur:a\tcursor:auto"
+			],
+			[
+				"pos",
+				"pos:f\tposition:fixed"
+			],
+			[
+				"h",
+				"h\theight"
+			],
+			[
+				"brc",
+				"bdrc\tborder-right-color"
+			],
+			[
+				"d",
+				"d:n\tdisplay:none"
+			],
+			[
+				"l",
+				"lts\tletter-spacing"
+			],
+			[
+				"ls",
+				"lts\tletter-spacing"
+			],
+			[
+				"cur",
+				"cur:p\tcursor:pointer"
+			],
+			[
+				"angleB",
+				"angleBox3"
+			],
+			[
+				"br",
+				"bgr:r\tbackground-repeat:repeat"
+			],
+			[
+				"s",
+				"sprite"
+			],
+			[
+				"b",
+				"bg\tbackground"
+			],
+			[
+				"lotter",
+				"lottery_ani"
+			],
+			[
+				"w",
+				"w\twidth"
+			],
+			[
+				"ma",
+				"m:a\tmargin:auto"
+			],
+			[
+				"im",
+				"img_video_mobile.jpg\tw:750 h:320"
+			],
+			[
+				"mi",
+				"multi-carousel.js"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"kv_",
+				"kv_twinstar.jpg\tw:1920 h:1050"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/hiking/Dropbox/CorePlus/_wwwroot/framework.coreplay.com.tw/勁量電池/source/_includes/awards_20170428.pug",
+			"settings":
+			{
+				"buffer_size": 3391,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 304.0,
+		"last_filter": "ins",
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"snipp",
+				"Snippet: Switch"
+			],
+			[
+				"snippet",
+				"Snippet: Class"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"emm",
+				"Emmet: Reflect CSS Value"
+			],
+			[
+				"sass",
+				"SassBeautify"
+			],
+			[
+				"package in",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 480.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/hiking/Dropbox/CorePlus/_wwwroot/framework.coreplay.com.tw/勁量電池",
+		"/Users/hiking/Dropbox/CorePlus/_wwwroot/framework.coreplay.com.tw/勁量電池/source",
+		"/Users/hiking/Dropbox/CorePlus/_wwwroot/framework.coreplay.com.tw/勁量電池/source/_includes"
+	],
+	"file_history":
+	[
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/kidsicon/source/index.pug",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/kidsicon/source/_coffeescripts/api/angle.js",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/kidsicon/source/_sass/base/_mixins.sass",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/kidsicon/source/_sass/api/coreplay/_mixins.sass",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/kidsicon/source/_sass/base/_fontface.scss",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/corplay_landing/source/_sass/base/_vars.sass",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/corplay_landing/source/_includes/logo.pug",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/corplay_landing/source/_sass/base/_sprite.sass",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/corplay_landing/source/_sass/layout/_state.sass",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/corplay_landing/source/_sass/api/coreplay/_mixins.sass",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/corplay_landing/source/_sass/style.sass",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/corplay_landing/source/_sass/modules/_nav.sass",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/corplay_landing/source/_includes/mixin.pug",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/coreplay2017/build/assets/images/svg/logo.svg",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/corplay_landing/source/_sass/modules/_typo.sass",
+		"/Users/hiking/Library/Application Support/Sublime Text 3/Packages/Emmet/Default (OSX).sublime-keymap",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/source/_includes/drawer.pug",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/source/_includes/footer.pug",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/source/_includes/header.pug",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/source/_coffeescripts/working/kvAniInit.coffee",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/source/_coffeescripts/working/kvAni.js",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/source/_coffeescripts/working/pageTransitionBlock.coffee",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/source/_includes/keepInTouch--title.pug",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/source/_coffeescripts/working/phoneInit.coffee",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/source/_coffeescripts/working/phone.js",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/build/assets/css/style.css",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/source/_sass/api/hamburgers/hamburgers.scss",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/source/_coffeescripts/working/waves.coffee",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/source/_sass/api/font-awesome/font-awesome.scss",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/source/_coffeescripts/working/fullscreen.coffee",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/source/_sass/sprite.sass",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/source/_sass/api/coreplay/_sprite.sass",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/source/_sass/style.sass",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/source/_sass/api/fullpage/jquery.fullPage.css",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/source/_sass/modules/_button.sass",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/source/_includes/threeLines.pug",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/source/layout.pug",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/source/_sass/modules/_loading.sass",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/source/_coffeescripts/working/tab.coffee",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/source/_coffeescripts/api/scrollFix.js",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/source/_coffeescripts/working/phone.coffee",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/source/_coffeescripts/working/phoneInit.js",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/source/_sass/api/scroller.css",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/source/_coffeescripts/api/jquery.scrollLock.js",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/source/_includes/letsBrand--title.pug",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/source/_sass/api/bootstrap4/bootstrap-flex.scss",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/source/_coffeescripts/working/fullpage.coffee",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/source/_sass/modules/_typo.sass",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/source/_sass/api/pace/pace-theme-center-simple.tmpl.css",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/source/_sass/api/pace/pace-theme-loading-bar.tmpl.css",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/build/_sass/api/pace/pace-theme-center-simple.tmpl.css",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/build/_sass/api/pace/pace-theme-loading-bar.tmpl.css",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/source/_coffeescripts/working/isScroll.coffee",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/source/_coffeescripts/api/hammer.min.js",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/source/_coffeescripts/api/scrolloverflow.js",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/source/_coffeescripts/api/jquery.fullPage.js",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/build/assets/js/global-ck-source-map-reference.coffee",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/source/_coffeescripts/working/resize.coffee",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/source/_coffeescripts/working/domready.coffee",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/source/_sass/base/_sprite.sass",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/ivplus/build/assets/超能力版頭動畫/超能力版頭動畫.html",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tableandstyle/source/_coffeescripts/working/page_transition.coffee",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/threejsDemo/source/_sass/style.sass",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/threejsDemo/source/_coffeescripts/working/clothes.coffee",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/threejsDemo/source/_coffeescripts/working/stats.coffee",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/about.html",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/iochat/style.css",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/iochat/package.json",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/chatRoom/assets/style.css",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/chatRoom/Procfile",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/chatRoom/main.js",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/chatRoom/assets",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/_coffeescripts/working/noise.coffee",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/build/assets/js/global.js",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/_coffeescripts/working/hash.coffee",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/team01.pug",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/_coffeescripts/working/question.coffee",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/_coffeescripts/working/youtubeapi.coffee",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/_coffeescripts/working/pace.coffee",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/_coffeescripts/working/domready.coffee",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/_coffeescripts/working/chart.coffee",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/_coffeescripts/api/jquery.fullPage.js",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/_sass/api/hamburgers/hamburgers.scss",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/_sass/api/jquery.fullPage.css",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/build/assets/css/style.css",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/_sass/api/font-awesome/font-awesome.scss",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/_sass/style.sass",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/_coffeescripts/api/vendor/pace/pace.coffee",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/_coffeescripts/working/checkToIntro.coffee",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/layout.pug",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/_sass/base/_fontface.scss",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/teams.pug",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/_coffeescripts/working/scroll.coffee",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/_coffeescripts/api/Chart.bundle.js",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/_sass/modules/_kidult.sass",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/_sass/modules/_components.sass",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/reviewChampion2016.pug",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/reviewChampion2015.pug",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/reviewChampion2014.pug",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/reviewVideo.pug",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/reviewPhoto2016.pug",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/reviewPhoto2015.pug",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/reviewPhoto2014.pug",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/_sass/modules/_loading.sass",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/_sass/modules/_app.sass",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/_sass/layout/_section.sass",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/_includes/modal.pug",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/_sass/modules/_modal.sass",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/_coffeescripts/working/ytbg.coffee",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/_coffeescripts/api/jquery.youtubebackground.js",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/build/teams.html",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/_coffeescripts/api/jquery.pjax.js",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/build/assets/js/jquery.pjax.js",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/_coffeescripts/working/swiper.coffee",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/_sass/modules/_swiper.sass",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/_coffeescripts/working/resize.coffee",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/_coffeescripts/working/scrollMagic.coffee",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/_coffeescripts/working/scrollspy.coffee",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/tryit_3on3_2017/source/index.pug",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/puretea/source/_sass/modules/_animate.sass",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/puretea/source/_coffeescripts/working/checkToIntro.coffee",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/puretea/source/classes.pug",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/puretea/source/reviewVideo.pug",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/puretea/source/_coffeescripts/working/ytbg.coffee",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/puretea/source/_includes/drawer.pug",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/puretea/source/_sass/modules/_button.sass",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/puretea/source/_sass/modules/_nav.sass",
+		"/Users/hiking/Dropbox/CorePlus/_git/hiking/puretea/source/_sass/layout/_section.sass"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"09",
+			"\t",
+			"line-height",
+			"white",
+			"btnBorderBefore",
+			"black",
+			"toy",
+			"showcase",
+			"compare",
+			"white",
+			"&:before\n\t\t+position(absolute, 0 null null 0)\n\t\t+size(100%, 80%)\n\t\tz-index: -3\n\t\tcontent: \"\"\n\t\ttransform: skewY(-4deg)\n\t\tbackground:\n\t\t\tcolor: #0d2e85\n\t&:after\n\t\t+position(absolute, null null 0 0)\n\t\t+size(100%, 80%)\n\t\tz-index: -3\n\t\tcontent: \"\"\n\t\ttransform: skewY(4deg)\n\t\tbackground:\n\t\t\tcolor: #0d2e85",
+			"Mamelon",
+			"kv",
+			"font-size",
+			".section--kv",
+			"kv",
+			"Mobile",
+			"-170px",
+			"service--",
+			"circle",
+			"call",
+			".btn--keepInTouch",
+			"1",
+			"false",
+			";",
+			"} ",
+			"}",
+			";",
+			" {",
+			"circle",
+			"overflow: hidden",
+			"pic--showcase--4",
+			"canvas.",
+			"render",
+			"canvas.",
+			"[1]",
+			"null",
+			"43px",
+			"pic--show",
+			"shadow",
+			"size",
+			"=size",
+			".showcase--title",
+			"position",
+			"FFF",
+			"B9004A",
+			"-image",
+			"btn--",
+			"5*3",
+			"2",
+			"4",
+			"refresh",
+			".fp-auto-height",
+			"deg_to_pi",
+			"0",
+			"20",
+			"-15",
+			"20",
+			"offsetY+",
+			":",
+			",",
+			"currentLine",
+			"centerX-250",
+			"centerY+100",
+			"centerY",
+			"centerX",
+			" + currentLine.des",
+			"currentLine.centerY + ",
+			"currentLine.centerX/3*2 + ",
+			"context",
+			"*3/2",
+			"+ currentLine.des",
+			"currentLine.centerY + ",
+			", i * delayFactor",
+			"new TweenLite",
+			"TweenMax",
+			"new ",
+			"new TweenMax",
+			"new ",
+			"<div ",
+			"=\"\"></div>",
+			"Test",
+			"name: 'Test'",
+			"Test",
+			"\"#F29600\"",
+			"\"#6EC6E1\"",
+			"\"#E30072\"",
+			" + currentLine.des",
+			" + 0",
+			"100",
+			" + 0",
+			"20",
+			"stroke: 'red'",
+			"TweenLite",
+			"new ",
+			"add [\n\t\t\t\tnew TweenLite",
+			"x",
+			"destIncrement",
+			"ctx",
+			"Point(r,deg)",
+			"+time",
+			"context",
+			"stroke",
+			";",
+			"align-items",
+			"value",
+			"alignItems",
+			"align",
+			";",
+			" {",
+			"} ",
+			"value",
+			"arg2",
+			";",
+			" {",
+			"} ",
+			"superKid",
+			"super",
+			"cache",
+			"?version=1",
+			"png",
+			"slideEnd",
+			"letsBrand--wrapper",
+			"'.viewport'",
+			"'.app__content'",
+			"'.viewport'",
+			"rue\n\t\tscrollOverflow: true\n\t\tscrollOverflowOptions:\n\t\t\tclick: true",
+			".hide"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": true,
+		"regex": true,
+		"replace_history":
+		[
+			"",
+			"Copyright@TKK International INC.All Right Reserved.",
+			"fixed--bg"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/hiking/Dropbox/CorePlus/_wwwroot/framework.coreplay.com.tw/勁量電池/source/_includes/awards_20170428.pug",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3391,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1477,
+								1477
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Pug/Syntaxes/Pug.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 716.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 31.0
+	},
+	"output.find_results":
+	{
+		"height": 142.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 32.0
+	},
+	"pinned_build_system": "",
+	"project": "battery.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Dropbox/CorePlus/_wwwroot/framework.coreplay.com.tw/wwwroot__three/source/_coffeescripts/working/tryit3on3.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 291.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 2
+	}
+}

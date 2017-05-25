@@ -1,267 +1,326 @@
-.links
+.cover--content
 	&
-		+animate
-		transition-duration: 3s
-		opacity: 1
-	&.from
-		opacity: 0
-
-.links
-	&
-		margin:
-			top: 2rem
-		text-align: center
-	a
-		&
-			+inline-block
-			+relative
-			color: $ocean
-			margin: 0 1rem
-			font-size: 24px
-			line-height: 1.5
-			font-family: "HirukoProAlternate-Bld"
-		> span
-			color: rgba($ocean, 0)
-		> span + span
-			+animate-fast
-			+position(absolute, null null 0 0)
-			color: $ocean
-			// transform: translateY(0)
-		&:before,
-		&:after
-			+inline-block
-			+position(absolute, null null 0 0)
-			+animate-fast
-			border-radius: 2px
-			width: 100%
-			height: 4px
-			content: ""
-		&:before
-			background: rgba($ocean, .2)
-		&:after
-			width: 0
-			background: $pink
-		&:hover
-			> span + span
-				color: $pink
-				transform: translateY(-6px)
-			&:before
-				background: rgba($ocean, 0)
-			&:after
-				width: 100%
-
-
-
-
-
-.wrapper
-	+desktop
-		+size(960px, auto)
-		+abs-center
-		text-align: center
-		// background: rgba(red, .3)
-	+tablet
-		+size(960px, 500px)
-		+abs-center
-		max-width: 90%
-		margin: 0 auto
-	+mobile
-		max-width: 90%
-		margin: 0 auto
-		margin:
-			top: 60px
-
-
-.associated
-	&
-		margin:
-			top: 40px
-	+mobile
-		margin:
-			top: 20px
-
-.logo--group
-	&
-		width: 600px
+		+mamelon
+	> *
+		&:nth-child(1)
+			+rem(margin-bottom, 33px)
+		&:nth-child(2)
+			+rem(margin-bottom, 21px)
+		&:nth-child(3)
+			+rem(margin-bottom, 112px)
+	.cover__title
+		+font-size(55px)
+	.cover__subTitle
+		+font-size(28px)
+	.pic__train
+		position: relative
+		z-index: 2
 		max-width: 100%
-		align-items: center
-		display: flex
-	> a
-		display: inline-block
-	a + a
-		margin:
-			left: 40px
-	+mobile
-		a + a
-			margin:
-				left: 20px
+	+mq-down(md)
+		> *
+			&:nth-child(1)
+				+rem(margin-bottom, 23px)
+			&:nth-child(2)
+				+rem(margin-bottom, 17px)
+			&:nth-child(3)
+				+rem(margin-bottom, 77px)
+		.logo__kids
 
-// 
+		.cover__title
+			+font-size(36px)
+		.cover__subTitle
+			+font-size(22px)
+.intro--pic
+	> *
+		&
+			position: absolute
+			z-index: 2
+			width: 20vw
+		&:nth-child(1)
+			left: 0
+			top: -3%
+		&:nth-child(2)
+			right: 0
+			top: -3%
+		&:nth-child(3)
+			left: 0
+			bottom: -3%
+		&:nth-child(4)
+			right: 0
+			bottom: -3%
+		+mq-down(md)
+			&
+				width: 45vw
+				+transform(scale(0.5))
+			&:nth-child(1)
+				left: 0%
+				top: 0%
+				+transform-origin(left top)
+			&:nth-child(2)
+				right: 0%
+				top: 0%
+				+transform-origin(right top)
+			&:nth-child(3)
+				left: 0%
+				bottom: -7%
+				+transform-origin(left bottom)
+			&:nth-child(4)
+				right: 0%
+				bottom: -7%
+				+transform-origin(right bottom)
+		+mobile
+			&
+				display: none
+				width: 90vw
+			&:nth-child(1)
+				left: -7%
+				top: -38%
+			&:nth-child(2)
+				right: -12%
+				top: -16%
+			&:nth-child(3)
+				left: -0%
+				bottom: -3%
+			&:nth-child(4)
+				right: -0%
+				bottom: -3%
 
-
-.logo
+.intro--content
 	&
-		color: #D8137D
-		transition-duration: 1.6s
-		font-family: "HirukoProAlternate-Bld"
-		font-size: 120px
-		color: white
-		opacity: 1
-	span
-		margin:
-			top: 8px
-		display: block
+		background-color: #FADC1F
+		+rem(padding-top,210px)
+		+rem(padding-bottom, 38px)
 		text-align: center
-		font-family: 'HirukoPro-Book', 'Noto Sans TC', sans-serif
-		font-size: 30px
-		font-weight: 800
-	&.from
-		opacity: 0
-		margin:
-			top: 88px
-	+tablet
-		font-size: 90px
-	+mobile
-		font-size: 60px
+	> *
+		&:nth-child(2)
+			+rem(margin-bottom, 19px)
+		&:nth-child(3)
+			+rem(margin-bottom, 38px)
+		&:nth-child(4)
+			+rem(margin-bottom, 34px)
+	.tt__slogan
+		+xy(184px,109px)
+		z-index: 2
+	.intro__title
+		+font-size(36px)
+		line-height: (48 / 36)
+		font-weight: 900
+	.intro__quote
+		+font-size(20px)
+		line-height: (30 / 20)
+		color: white
+		letter-spacing: 2.25px
+		font-weight: 500
+	span
+		font-size: percentage(18px/20px)
+		font-weight: 400
+	+mq(lg)
+		.tt__slogan
+			+abs-h-center
+			margin:
+				top: -60px
+	+mq-down(md)
+		&
+			padding:
+				left: 15px
+				right: 15px
+			+rem(padding-top, 33px)
+			+rem(padding-bottom, 50px)
+		> *
+			&:nth-child(1)
+				+rem(margin-bottom, 16px)
+			&:nth-child(2)
+				+rem(margin-bottom, 16px)
+			&:nth-child(3)
+				+rem(margin-bottom, 17px)
+			&:nth-child(4)
+				+rem(margin-bottom, 23px)
+		.tt__slogan
+			position: relative
+			left: 0
+			top: 0
+	+mq-down(xs)
+		.intro__title
+			font-size: 7.3vw
 
-.stage3D
+div[class*=--header]
 	&
-		+animate-fast
-		+size(100px, 100px)
+		position: relative
+		display: inline-block
+		height: 44px + 66px
+	div[class*=__title]
+		+font-size(44px)
+		+mamelon
+		line-height: (48 / 44)
+	.bg__toyTitle
 		+abs-center
-		position: fixed
-		transition-duration: 2s
-		perspective: 200px
-		transform-origin: center center
-		z-index: -1
-		// background: rgba(red, .1)
-	.fp-viewing-0 &
-		top: 45%
-	.fp-viewing-1 &
-		&
-			// perspective: 200px
-			top: 60%
-		+mobile
-			left: 10%
-	.fp-viewing-2 &
-		&
-			// perspective: 150px
-			top: 40%
-			left: 40%
-		+mobile
-			top: 30%
-			left: 100%
-	+tablet
-		transform: scale(.8)
-	+mobile
-		transform: scale(.5)
-		top: 40%
-		left: 40%
-
-.meteor3D
+		top: 68px
+.toy--header
 	&
+		+rem(margin-bottom, 100px)
+	+mq-down(md)
+		+rem(margin-bottom, 33px)
+.toy--content
+	&
+		text-align: left
+		position: relative
+		+rem(margin-bottom,120px)
+	&:last-child
+		+rem(margin-bottom,79px)
+	+mq-down(md)
+		+rem(margin-bottom,37px)
+		&:last-child
+			+rem(margin-bottom,47px)
+.toy--pic
+	&
+		display: block
+	> *
 		+animate-fast
-		+position(absolute, 50% null null 50%)
-		// transform: translate(-50%, -50%)
-		transition-duration: 3s
-		transform-style: preserve-3d
-		transform-origin: center center
-		width: 200px
-		height: 200px
-		// background: rgba(red, .2)
-		margin:
-			left: -100px
-			top: -100px
-	&:after
-		+position(absolute, 0 null null 0)
-		content: "meteor3D"
-		color: white
-		display: none
-	.pace-running &
-		transform: translate3d(0, -630px, -50px) rotateX(-100deg) scale(2)
-	.fp-viewing-0 &
-		transform: rotateX(-6deg) scale(.7)
-	.fp-viewing-1 &
-		transform: translate3d(0, 30px, -50px) rotateX(-100deg) scale(.8)
-	.fp-viewing-2 &
-		transform: translate3d(-200px, -200px, -50px) rotateZ(-27deg) rotateY(10deg) rotateX(7deg) scale(1.1)
-
-.meteors
-	+position(absolute, 50% null null 50%)
-	transform: rotateZ(135deg) translate(-50%, -50%)
-	transform-origin: center center
-	transform-style: preserve-3d
-
-.meteor
+	.reverse &
+		text-align: right
+	&:hover
+		> *
+	+mq-down(md)
+		&
+			max-width: 100%
+			+rem(margin-bottom,23px)
+		> *
+			max-width: 100%
+			width: 100%
+.toy--text
 	&
-		+absolute
-		width: 800px
-		height: 30px
-		transform: translate(-50%, -50%)
-		border-radius: 15px
-	&:after
-		+position(absolute, 0 null null 0)
-		content: "m0"
-		color: white
-		display: none
-	&:before
-		+position(absolute, 0 null null 0)
-		border-radius: 15px
-		height: 30px
-		width: 30px
-		background:
-			image: url(../images/sprite/color.png)
-			position: right center
-		content: ""
-	&.m0
-		top: -36px
-	&.m1
+		position: relative
+		left: 50%
+		margin-top: -320px
+		display: inline-block
+		white-space: nowrap
+	.reverse &
+		left: 0
+		margin-top: -360px
+		top: -200px
+	#donguri &
+		margin-top: -360px
+		top: -140px
+	.button--basic
+		margin: 0 auto
+	+mq-down(md)
+		&,
+		.reverse &,
+		#donguri &
+			display: block
+			white-space: normal
+			left: 0
+			margin-top: 0
+			top: 0
+		p br
+			display: none
+	> *
+		&:nth-child(1)
+			+rem(margin-bottom,37px)
+		&:nth-child(2)
+			+rem(margin-bottom,41px)
+		&:nth-child(3)
+			float: right
+			.reverse &
+				float: none
+		+mq(lg)
+			&:nth-child(1)
+				+rem(margin-bottom, 20px)
+		+mq-down(md)
+			&:nth-child(1)
+				+rem(margin-bottom,13px)
+			&:nth-child(2)
+				+rem(margin-bottom,23px)
+			&:nth-child(3)
+				float: none
+				.reverse &
+					float: none
+.toy__title
+	&
+		+font-size(72px)
+		line-height: (80 / 72)
+		font-weight: 900
+	#eguchiToys &
+		color: #3DD7DA
+	#owlAndDog &
+		color: #6B696C
+	#unpaintedTrain &
+		color: #EE90A1
+	#donguri &
+		color: #54BE9C
+	+mq(lg)
+		+font-size(60px)
+	+mq(md)
+		+font-size(48px)
+	+mq-down(sm)
+		+font-size(36px)
+		line-height: 1.2
+
+.about--header
+	&
+		+rem(margin-bottom,74px)
+	+mq-down(md)
+		+rem(margin-bottom, 33px)
+.about--content
+	&
+		background-color: #FFB4B3
+		color: #6F4930
+		+rem(padding-bottom,99px)
+	> *
+		&:nth-child(2)
+			+rem(margin-bottom,46px)
+		&:nth-child(3)
+			+rem(margin-bottom,105px)
+
+	.about__title
 		&
-			transform: scale(.6) translate(-50%, -50%)
-			top: -136px
-			left: -134px
-		&:after
-			content: "m1"
-		&:before
-			background:
-				image: url(../images/sprite/color1.png)
-	&.m2
+			+font-size(40px)
+			font-weight: 900
+			line-height: (60 / 40)
+	+mq-down(md)
 		&
-			transform: scale(.75) translate(-50%, -50%)
-			top: 96px
-			left: -234px
-		&:before
-			background:
-				image: url(../images/sprite/color.png)
-	&.m3
-		&
-			transform: scale(.9) translate(-50%, -50%)
-			top: 30px
-			left: -164px
-		&:before
-			background:
-				image: url(../images/sprite/color2.png)
-	&.m4
-		&
-			transform: scale(.77) translate(-50%, -50%)
-			top: -101px
-			left: -204px
-		&:before
-			background:
-				image: url(../images/sprite/color1.png)
-	&.m5
-		&
-			transform: scale(.94) translate(-50%, -50%)
-			top: 54px
-			left: 74px
-		&:before
-			background:
-				image: url(../images/sprite/color1.png)
-	&.m6
-		&
-			transform: scale(.88) translate(-50%, -50%)
-			top: -43px
-			left: -80px
-		&:before
-			background:
-				image: url(../images/sprite/color2.png)
+			padding:
+				left: 15px
+				right: 15px 
+			+rem(padding-bottom,50px)
+		> *
+			&:nth-child(1)
+				+rem(margin-bottom,-7px)
+			&:nth-child(2)
+				+rem(margin-bottom,23px)
+			&:nth-child(3)
+				+rem(margin-bottom,23px)
+		.about__title
+			+font-size(36px)
+	+mq-down(xs)
+		.about__title
+			font-size: 5.6vw
+		p br
+			&:not(:last-child)
+				display: none
+
+.about--pic
+	> *
+		max-width: 100%
+.footer--content
+	> *
+		&:nth-child(1)
+			+rem(margin-bottom,66px)
+		&:nth-child(2)
+			+rem(margin-bottom,66px)
+		+mq-down(md)
+			&:nth-child(1)
+				+rem(margin-bottom,33px)
+			&:nth-child(2)
+				+rem(margin-bottom,33px)
+.footer__powerBy
+	+mamelon
+	+font-size(30px)
+	color: #4A4A4A
+.footer__title
+	font-family: 'HirukoProAlternate-Blk'
+	color: #4A4A4A
+	+font-size(100px)
+	+mq-down(md)
+		+font-size(60px)
+

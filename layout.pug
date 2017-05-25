@@ -1,7 +1,8 @@
-- $root = "http://www.coreplay.com.tw/"
-- $title = "coreplay html5 template"
-- $description = "coreplay html5 template 是基於 HTML / CSS / JS : Pug / Sass / Coffeescript 的工具模版，目的是為了將常用的 html 功能作成模組，加速作業流程，同時最大化修改的彈性。提供給團隊中不同前端人員協同作業時，一個溝通的基礎。"
+- $root = "http://kidsicon.tw/"
+- $title = "Kids+ Icon 大人小孩。玩具箱 – Good for Little One"
+- $description = ""
 - $ogimg = "fbshare.png"
+
 
 block vars
 
@@ -18,26 +19,27 @@ html
 		link(rel="stylesheet" href="assets/css/sprite.css")
 		link(rel="stylesheet" href="assets/css/style.css")
 		link(rel="stylesheet" href="assets/css/adjunction.css")
-		link(rel="shortcut icon" href="favicon.ico" type="image/x-icon")
+		link(rel="shortcut icon" href="favicon.png" type="image/x-icon")
 		meta(property="og:title", content=$title)
 		meta(property="og:type", content="website")
 		meta(property="og:description", content=$description)
 		meta(property="og:url", content=$root)
 		meta(property="og:image", content=$root+"assets/images/"+$ogimg)
 		meta()
-		//- include _includes/tracking.pug
+		include _includes/tracking.pug
 		block head
 	body
 		.view.app
 			.app__loading
-				.loading__mask
-				.loading__img
-					.logo--icon__outside
-					.logo--icon__inside
-				.loading__caption
-					| loading
+				//- .loading__mask
+				//- .loading__img
+				//- 	.logo--icon__outside
+				//- 	.logo--icon__inside
+				//- .loading__caption
+				//- 	| loading
 			.app__drawer
 			.app__header
+				include _includes/header
 			.app__content.viewport
 				block content
 			.app__footer

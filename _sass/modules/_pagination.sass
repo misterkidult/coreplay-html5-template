@@ -1,0 +1,42 @@
+.pagination
+	&
+		+abs-v-center
+		+fixed
+		text-align: center
+		right: 17px !important
+		z-index: 9
+		width: 16px
+	+mobile
+		display: none
+	> .pagination--item
+		&
+			+inline-block
+			+relative
+			+animate
+			border-radius: 50%
+			float: left
+			width: 12px
+			height: 12px
+			// border: 1px solid rgba(white, .5)
+			background: rgba(black, .2)
+			margin:
+				bottom: 8px
+	.fp-viewing-cover &
+		> .pagination--item:nth-child(1)
+				background: #E30072
+	.fp-viewing-about &
+		> .pagination--item:nth-child(2)
+				background: #E30072
+	.fp-viewing-service &
+		> .pagination--item:nth-child(3)
+				background: #E30072
+	.fp-viewing-insider &
+		> .pagination--item:nth-child(4)
+				background: #E30072
+	.fp-viewing-corp &
+		> .pagination--item:nth-child(5)
+				background: #E30072
+	.fp-viewing-contact &
+		> .pagination--item:nth-child(6)
+				background: #E30072
+	

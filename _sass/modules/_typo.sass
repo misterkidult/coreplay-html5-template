@@ -1,7 +1,7 @@
 body
 	&
 		font-family: 'Noto Sans TC', sans-serif
-		color: white
+		color: #000
 		font-size: 16px
 		font-weight: 400
 		line-height: 1
@@ -10,7 +10,7 @@ body
 		-webkit-backface-visibility: hidden
 		text-align: justify
 	+mobile
-		font-size: 18px
+		font-size: 14px
 		line-height: 1.2
 
 a
@@ -95,27 +95,53 @@ input[type="checkbox"]
 			color: #F89900 - 20
 
 dl
-	+desktop
-		dt
-			position: absolute
-			width: 6em
-		dd
-			+post(1rem)
-			margin:
-				left: 6em
-	+tablet
-		dt
-			position: absolute
-			width: 6em
-		dd
-			+post(1rem)
-			margin:
-				left: 6em
-	+mobile
-		dt
-			+post(.5rem)
-		dd
-			+post(1rem)
+	&
+		+relative
+		+inline-block
+		// +clearfix
+		font-family: 'Noto Sans TC', sans-serif
+		font-size: 110%
+		line-height: 1.6
+		font-weight: 500
+	dt
+		+inline-block
+		float: left
+		width: 20px
+		text-align: center
+	dd
+		+inline-block
+		float: left
+		width: calc(100% - 20px)
+		white-space: nowrap
+		margin: 0
+		padding:
+			left: 20px
+		text-align: left
+	dt + dd + dt
+		clear: both
+
+// dl
+// 	+desktop
+// 		dt
+// 			position: absolute
+// 			width: 6em
+// 		dd
+// 			+post(1rem)
+// 			margin:
+// 				left: 6em
+// 	+tablet
+// 		dt
+// 			position: absolute
+// 			width: 6em
+// 		dd
+// 			+post(1rem)
+// 			margin:
+// 				left: 6em
+// 	+mobile
+// 		dt
+// 			+post(.5rem)
+// 		dd
+// 			+post(1rem)
 
 
 h1,
@@ -127,39 +153,20 @@ h6
 	+margin(0)
 	font-weight: 500
 	letter-spacing: 0.5px
+// p
+// 	&
+// 		+post(1rem)
+// 		font-size: 16px
+// 		line-height: 1.4
+// 		letter-spacing: 0.5px
+// 	+mobile
+// 		font-size: 18px
+	
 p
 	&
-		+post(1rem)
-		font-size: 16px
-		line-height: 1.4
+		font-size: 100%
+		font-weight: 500
+		line-height: 2
 		letter-spacing: 0.5px
 	+mobile
-		font-size: 18px
-		
-
-h1
-	+post(1rem)
-	font-size: 260%
-h2
-	&
-		+post(.5rem)
-		font-size: 36px
-	&.with--toy
-		// &
-		// 	margin:
-		// 		left: -10px
-		&:before
-			+size(95px, 28px)
-			transform: translate(-5px, 2px)
-			margin:
-				right: 13px
-			display: inline-block
-			content: ""
-			background:
-				size: cover
-				image: url(../images/sprite/logo--toy.png)
-
-h3
-	+post(.5rem)
-	font-size: 30px
-	color: white
+		line-height: 1.8

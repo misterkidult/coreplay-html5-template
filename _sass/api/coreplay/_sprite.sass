@@ -12,6 +12,41 @@
 
 // sprite with compass
 
+=h-s($src, $w, $h)
+	$str: str-slice($src, 0, -5)
+	$classname: "."+$str
+	#{$classname}
+		+sprite($src)
+		width: $w + px
+		height: $h + px
+
+=h-sr($src, $w, $h)
+	$str: str-slice($src, 0, -5)
+	$classname: "."+$str
+	#{$classname}
+		+h-sprite-responsive($src, $w, $h)
+		width: $w + px
+
+=h-sprite-responsive($src, $w, $h)
+	+h-sprite-responsive-mixin('/sprite/'+$src, $w, $h)
+
+=h-sprite-responsive-mixin($src, $w, $h)
+	// +text-hide
+	display: inline-block
+	+aspectRatio($w, $h)
+	position: relative
+	font-size: 0
+	line-height: 0
+	background:
+		size: contain
+		repeat: no-repeat
+		image: url('../images/'+$src)
+		position: center
+	// width: image-width($src)
+	// height: image-height($src)
+	// +media-breakpoint-down(sm)
+	// 	width: image-width($src) / 3 * 2
+
 =s($src)
 	$str: str-slice($src, 0, -5)
 	$classname: "."+$str

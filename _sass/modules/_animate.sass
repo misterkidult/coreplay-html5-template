@@ -1,3 +1,154 @@
+
++keyframes(opacity)
+	0%
+		opacity: 1
+	50%
+		opacity: 0
+	100%
+		opacity: 1
++keyframes(check)
+	0%
+		+size(0,0)
+	25%
+		+size(20px,0px)
+	50%
+		+size(20px,40px)
+
+=brb
+	right: 0
+	bottom: 0
+	left: auto
+	top: auto
+	border:
+		right: 1px solid black
+		bottom: 1px solid black
+		top: none
+		left: none
+=brt
+	right: 0
+	top: 0
+	left: auto
+	bottom: auto
+	border:
+		right: 1px solid black
+		top: 1px solid black
+		bottom: none
+		left: none
+=blb
+	left: 0
+	bottom: 0
+	right: auto
+	top: auto
+	border:
+		left: 1px solid black
+		bottom: 1px solid black
+		top: none
+		right: none
+=blt
+	left: 0
+	top: 0
+	right: auto
+	bottom: auto
+	border:
+		left: 1px solid black
+		top: 1px solid black
+		bottom: none
+		right: none
++keyframes(btnBorderBefore)
+	0%
+		+size(100%, 100%)
+		+brb
+	25%
+		+size(100%,0)
+		+brb
+	51%
+		+size(0, 0)
+		+brb
+	52%
+		+size(0, 0)
+		+brt
+
+	75%
+		+size(0%,100%)
+		+brt
+
+	100%
+		+size(100%, 100%)
+		+brt
+
++keyframes(btnBorderAfter)
+	0%
+		+size(100%, 100%)
+		+blt
+
+	25%
+		+size(100%,0%)
+		+blt
+
+	51%
+		+size(0, 0)
+		+blt
+
+	52%
+		+size(0, 0)
+		+blb
+
+	75%
+		+size(0%,100%)
+		+blb
+
+	100%
+		+size(100%, 100%)
+		+blb
+
++keyframes(circle)
+	0%
+		stroke-dasharray: 0 158
+		+transform(rotate(0))
+		opacity: 0
+	100%,50%
+		stroke-dasharray: 158 158
+		+transform(rotate(360deg))
+		opacity: 1
++keyframes(kvArrowDown)
+	0%
+		+transform(translate(-50%,0))
+	99.9%,to
+		+transform(translate(-50%,-10px))
++keyframes(arrowDown)
+	0%
+		+transform(translate(0%,0))
+	99.9%,to
+		+transform(translate(0%,-10px))
++keyframes(up-and-down)
+	0%
+		transform: translateY(0)
+	50%
+		transform: translateY(-4px)
+	0%
+		transform: translateY(0)
+
+.btn--arrow
+	animation: up-and-down 555ms linear infinite
+
++keyframes(shine)
+	0%
+		opacity: 1
+	50%
+		opacity: .4
+	0%
+		opacity: 1
+
+
+.pace-running
+	.logo--icon__inside
+		animation: shine 777ms linear infinite
+	.logo--icon__outside
+		animation: shine 666ms linear infinite
+
+
+// 
+
 +keyframes(up-and-down)
 	0%
 		transform: translateY(0)

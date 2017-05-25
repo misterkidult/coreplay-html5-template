@@ -1,0 +1,134 @@
+.float__circle
+	+mobile
+		width: (524/4)+px
+.float__rect
+	+mobile
+		width: (584/4)+px
+.float__triangle
+	+mobile
+		width: (676/4)+px
+.float,
+.lines,
+.blocks,
+.circles,
+.rects
+	position: absolute
+	left: 0
+	top: 0
+	+size(100%,100%)
+	z-index: -1
+.line
+	&
+		position: absolute
+		background-color: #979797
+		+size(315px,1px)
+		+transform(rotate(-45deg))
+		+transform-origin(left top)
+	.section--cover &
+		&:nth-child(1)
+			+xy(0,200px)
+		&:nth-child(2)
+			+xy(60%,150px)
+		&:nth-child(3)
+			width: 238px
+			+xy(80%,650px)
+	.section--about &
+		&:nth-child(1)
+			width: 400px
+			+xy(80%,600px)
+		&:nth-child(2)
+			width: 1000px
+			+xy(0%,1700px)
+	.section__bottom &
+		&:nth-child(1)
+			width: 400px
+			+xy(80%,550px)
+	+mq-down(md)
+		.section--cover &
+			&:nth-child(1)
+				+xy(0,200px)
+			&:nth-child(2)
+				+xy(60%,150px)
+			&:nth-child(3)
+				+xy(80%,650px)
+		.section--about &
+			&:nth-child(1)
+				+xy(80%,600px)
+			&:nth-child(2)
+				width: 500px
+				+xy(0%,1300px)
+		.section__bottom &
+			&:nth-child(1)
+				width: 400px
+				+xy(80%,453px)
+	+mobile
+		.section--cover &
+			&:nth-child(1)
+				+xy(0,200px)
+			&:nth-child(2)
+				+xy(60%,150px)
+			&:nth-child(3)
+				+xy(80%,650px)
+		.section--about &
+			&:nth-child(1)
+				+xy(80%,300px)
+			&:nth-child(2)
+				width: 400px
+				left: 0
+				top: auto
+				bottom: -5%
+		.section__bottom &
+			&:nth-child(1)
+				width: 400px
+				+xy(80%,453px)
+.yellow__block,
+.blue__block,
+.red__block
+	&
+		+xy(0,32px)
+		+size(30px,200px)
+		background-color: #F8E81C
+	+mq(lg)
+		+size(20px,120px)
+	+tablet
+		+size(15px,100px)
+	+mobile
+		+size(10px,50px)
+.blue__block
+	top: 0
+	background-color: #50E3C2
+.red__block
+	top: 0
+	background-color: #BF5366
+.float__triangle
+	+xy(90%,200px)
+	.section--toy &
+		+xy(63%,-100px)
+	+mobile
+		.section--toy &
+			+xy(80%,-100px)
+.float__circle
+	+xy(-10%,600px)
+	+mobile
+		+xy(-10%,400px)
+
+.float__rect
+	position: absolute
+	.section--toy &
+		+xy(8%,-150px)
+	.section--about &
+		+xy(80%,1250px)
+	+mq-down(md)
+		.section--toy &
+			+xy(12%,250px)
+		.section--about &
+			+xy(80%,870px)
+	+mobile
+		.section--toy &
+			+xy(12%,250px)
+		.section--about &
+			top: auto
+			bottom: -70px
+.section--about
+	.rects
+		z-index: 1

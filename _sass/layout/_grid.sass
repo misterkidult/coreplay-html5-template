@@ -1,37 +1,96 @@
-
-.row--portfolio
+.row--button
+	text-align: center
+	+flex-center(0,center,center)
+.row--table
 	&
 		+make-row(0)
-	> .col
+		margin:
+			bottom: 8rem
+	> .col,
+	> .col--title
 		+make-col(0)
 	> .col
-		+make-col-span(3)
-	> .col img
-		width: 100%
-	+tablet
+		+make-col-span(6)
+	> .col--title
+		+make-col-span(12)
+	+mobile
+		&
+			margin:
+				bottom: 2rem
 		> .col
-			+make-col-span(6)
+			+make-col-span(12)
+
+
+.row--service
+	&
+		+make-row(0)
+		align-items: stretch
+	> .col--full,
+	> .col--pic,
+	> .col--caption
+		+make-col(0)
+		// background: rgba(red, .1)
+	> .col--full
+		+make-col-span(12)
+	> .col--pic,
+	> .col--caption
+		+relative
+		+make-col-span(6)
+	> .col--pic
+		+make-col-push(6)
+		display: flex
+		align-items: center
+	> .col--caption
+		+make-col-pull(6)
+	+mobile
+		> .col--full,
+		> .col
+			+make-col-span(12)
+
+.row--compare
+	&
+		+make-row(60px)
+	> .col--left,
+	> .col--right
+		+make-col(60px)
+	> .col--left
+		+make-col-span(4)
+		text-align: left
+		padding:
+			top: 6rem
+	> .col--right
+		+relative
+		+make-col-span(8)
 	+mobile
 		> .col
 			+make-col-span(12)
 
-.row--content
-	&
-		+make-row(22px)
-	> .col--logo,
-	> .col--about,
-	> .col
-		+make-col(22px)
-	> .col--logo
-		+make-col-span(1.2)
-	> .col
-		+make-col-span(6)
-	> .col--about
-		+make-col-span(8)
-	+mobile
-		> .col--logo
-			+make-col-span(0)
-		> .col
-			+make-col-span(12)
-		> .col--about
-			+make-col-span(12)
+// .row--contact
+// 	&
+// 		+make-row(0)
+// 	> .col
+// 		+make-col(0)
+// 	> .col
+// 		+make-col-span(12)
+	
+
+// .row--content
+// 	&
+// 		+make-row(22px)
+// 	> .col--logo,
+// 	> .col--about,
+// 	> .col
+// 		+make-col(22px)
+// 	> .col--logo
+// 		+make-col-span(1.2)
+// 	> .col
+// 		+make-col-span(6)
+// 	> .col--about
+// 		+make-col-span(8)
+// 	+mobile
+// 		> .col--logo
+// 			+make-col-span(0)
+// 		> .col
+// 			+make-col-span(12)
+// 		> .col--about
+// 			+make-col-span(12)
